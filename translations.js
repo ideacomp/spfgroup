@@ -179,6 +179,10 @@ window.SPF_I18N = {
     team_skrickova_tags: '<span>Komunitní plánování</span><span>Sociální služby</span>',
     team_polaskova_role: 'Konzultantka', team_polaskova_desc: 'Komunitní plánování, sociální služby',
     team_polaskova_tags: '<span>Komunitní plánování</span><span>Sociální služby</span>',
+    team_kotouckova_role: 'Konzultantka', team_kotouckova_desc: 'Životní prostředí, odpadové hospodářství, udržitelný rozvoj',
+    team_kotouckova_tags: '<span>Životní prostředí</span><span>Odpadové hospodářství</span><span>Udržitelný rozvoj</span>',
+    team_kreuz_role: 'Konzultant', team_kreuz_desc: 'Životní prostředí, odpadové hospodářství, udržitelný rozvoj',
+    team_kreuz_tags: '<span>Životní prostředí</span><span>Odpadové hospodářství</span><span>Udržitelný rozvoj</span>',
 
     team_vojtek_edu: '<i class="fa-solid fa-graduation-cap"></i> České vysoké učení technické v Praze, Fakulta stavební – obor Ekonomika a řízení; Masarykův ústav vyšších studií ČVUT – obor Management veřejné správy',
     team_wiesner_edu: '<i class="fa-solid fa-graduation-cap"></i> Univerzita Jana Evangelisty Purkyně v Ústí nad Labem, Fakulta sociálně ekonomická – obor Ekonomie a management; Prague International Business School – MBA',
@@ -549,6 +553,10 @@ window.SPF_I18N = {
     team_skrickova_tags: '<span>Community Planning</span><span>Social Services</span>',
     team_polaskova_role: 'Consultant', team_polaskova_desc: 'Community planning, social services',
     team_polaskova_tags: '<span>Community Planning</span><span>Social Services</span>',
+    team_kotouckova_role: 'Consultant', team_kotouckova_desc: 'Environment, waste management, sustainable development',
+    team_kotouckova_tags: '<span>Environment</span><span>Waste Management</span><span>Sustainable Development</span>',
+    team_kreuz_role: 'Consultant', team_kreuz_desc: 'Environment, waste management, sustainable development',
+    team_kreuz_tags: '<span>Environment</span><span>Waste Management</span><span>Sustainable Development</span>',
 
     team_vojtek_edu: '<i class="fa-solid fa-graduation-cap"></i> Czech Technical University in Prague, Faculty of Civil Engineering – field: Economics and Management; Masaryk Institute of Advanced Studies, CTU – field: Public Administration Management',
     team_wiesner_edu: '<i class="fa-solid fa-graduation-cap"></i> Jan Evangelista Purkyně University in Ústí nad Labem, Faculty of Social and Economic Studies – field: Economics and Management; Prague International Business School – MBA',
@@ -919,6 +927,10 @@ window.SPF_I18N = {
     team_skrickova_tags: '<span>Gemeindeplanung</span><span>Sozialdienste</span>',
     team_polaskova_role: 'Beraterin', team_polaskova_desc: 'Gemeindeplanung, Sozialdienste',
     team_polaskova_tags: '<span>Gemeindeplanung</span><span>Sozialdienste</span>',
+    team_kotouckova_role: 'Beraterin', team_kotouckova_desc: 'Umwelt, Abfallwirtschaft, nachhaltige Entwicklung',
+    team_kotouckova_tags: '<span>Umwelt</span><span>Abfallwirtschaft</span><span>Nachhaltige Entwicklung</span>',
+    team_kreuz_role: 'Berater', team_kreuz_desc: 'Umwelt, Abfallwirtschaft, nachhaltige Entwicklung',
+    team_kreuz_tags: '<span>Umwelt</span><span>Abfallwirtschaft</span><span>Nachhaltige Entwicklung</span>',
 
     team_vojtek_edu: '<i class="fa-solid fa-graduation-cap"></i> Technische Universität Prag, Fakultät für Bauwesen – Fach Wirtschaft und Management; Masaryk-Institut für höhere Studien der TU Prag – Fach Public Administration Management',
     team_wiesner_edu: '<i class="fa-solid fa-graduation-cap"></i> Jan-Evangelista-Purkyně-Universität in Ústí nad Labem, Fakultät für Sozial- und Wirtschaftswissenschaften – Fach Wirtschaft und Management; Prague International Business School – MBA',
