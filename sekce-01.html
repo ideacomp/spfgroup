@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Strategické a prostorové plánování – SPF Group</title>
+    <meta name="description"
+        content="Tvoříme strategie, které mají smysl, jsou realizovatelné a podložené daty. Strategie rozvoje měst, evaluace, sociální služby, dopravní plánování a více." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header id="header">
+        <div class="header-inner container">
+            <a href="index.html#uvod" class="logo-link">
+                <img src="logo.png" alt="SPF Group logo" class="logo-img" />
+                <span class="logo-text">SPF Group</span>
+            </a>
+            <nav class="nav" id="nav">
+                <a href="index.html#uvod" class="nav-link" data-i18n="nav_uvod">Úvod</a>
+                <a href="index.html#o-nas" class="nav-link" data-i18n="nav_onas">O nás</a>
+                <a href="index.html#sluzby" class="nav-link active" data-i18n="nav_sluzby">Služby</a>
+                <a href="index.html#reference" class="nav-link" data-i18n="nav_reference">Reference</a>
+                <a href="index.html#blog" class="nav-link" data-i18n="nav_blog">Blog</a>
+                <a href="index.html#tym" class="nav-link" data-i18n="nav_tym">Tým</a>
+                <a href="index.html#kontakt" class="nav-link" data-i18n="nav_kontakt">Kontakt</a>
+            </nav>
+            <a href="index.html#kontakt" class="btn-cta" data-i18n="nav_cta">Kontaktovat</a>
+            <div class="lang-switcher" id="langSwitcher" aria-label="Jazyk / Language">
+                <button class="lang-btn active" data-lang="cs">CZ</button>
+                <span class="lang-sep">|</span>
+                <button class="lang-btn" data-lang="en">EN</button>
+                <span class="lang-sep">|</span>
+                <button class="lang-btn" data-lang="de">DE</button>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="Menu" data-i18n-aria="aria_hamburger" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+        <div class="container page-hero-inner">
+            <nav class="page-breadcrumb" aria-label="Breadcrumb">
+                <a href="index.html" data-i18n="breadcrumb_home">Hlavní stránka</a>
+                <span>›</span>
+                <a href="index.html#sluzby" data-i18n="breadcrumb_services">Služby</a>
+                <span>›</span>
+                <span style="color:rgba(255,255,255,0.8)" data-i18n="s1_breadcrumb_current">Strategické a prostorové plánování</span>
+            </nav>
+            <div class="page-hero-badge">01</div>
+            <h1 class="page-hero-title" data-i18n="s1_hero_title">Strategické a prostorové plánování</h1>
+            <p class="page-hero-lead" data-i18n="s1_hero_lead">Tvoříme strategie, které mají smysl, jsou realizovatelné a podložené daty.</p>
+        </div>
+    </section>
+
+    <!-- IN-PAGE NAVIGATION -->
+    <nav class="page-subnav" aria-label="Přejít na sekci">
+        <div class="container page-subnav-inner">
+            <a href="#strategie-mест" class="page-subnav-link" data-i18n="s1_nav1">Strategie měst</a>
+            <a href="#strategie-uzemi" class="page-subnav-link" data-i18n="s1_nav2">Rozvoj území</a>
+            <a href="#evaluace" class="page-subnav-link" data-i18n="s1_nav3">Evaluace</a>
+            <a href="#socialni-sluzby" class="page-subnav-link" data-i18n="s1_nav4">Sociální služby</a>
+            <a href="#cestovni-ruch" class="page-subnav-link" data-i18n="s1_nav5">Cestovní ruch</a>
+            <a href="#doprava" class="page-subnav-link" data-i18n="s1_nav6">Dopravní plánování</a>
+            <a href="#bydleni" class="page-subnav-link" data-i18n="s1_nav7">Strategie bydlení</a>
+            <a href="#vyzkumy" class="page-subnav-link" data-i18n="s1_nav8">Výzkumy</a>
+            <a href="#zivotni-prostredi" class="page-subnav-link" data-i18n="s1_nav9">Životní prostředí</a>
+        </div>
+    </nav>
+
+    <!-- SERVICE DETAIL BLOCKS -->
+    <section class="service-detail-section">
+        <div class="container">
+
+            <!-- 1. Strategie rozvoje měst a regionů -->
+            <div class="service-detail-card" id="strategie-mест">
+                <div class="sdc-header">
+                    <div class="sdc-icon" aria-hidden="true"><i class="fa-solid fa-landmark"></i></div>
+                    <div class="sdc-title-wrap">
+                        <h2 class="sdc-title" data-i18n="s1_c1_title">Strategie rozvoje měst a regionů</h2>
+                        <p class="sdc-tagline" data-i18n="s1_c1_tagline">Navrhujeme strategie, které se skutečně realizují.</p>
+                    </div>
+                </div>
+                <div class="sdc-body">
+                    <p data-i18n="s1_c1_p1">Pomáháme městům, obcím i regionům přetavit jejich výchozí situaci v jasnou a dlouhodobě udržitelnou vizi rozvoje. Důraz klademe na kvalitní analytické podklady, zapojení klíčových aktérů i veřejnosti a reálnou proveditelnost navržených opatření.</p>
+                    <p data-i18n="s1_c1_p2">Každý projekt připravujeme na míru – podle potřeb klienta i charakteru území. Umíme navrhnout komplexní strategie i rychlá a efektivní řešení odpovídající aktuálním požadavkům.</p>
+                    <p data-i18n="s1_c1_p3">Výstupem není jen vize, ale konkrétní opatření, projekty a jejich financování.</p>
+                    <p data-i18n="s1_c1_p4">Zpracováváme komplexní strategie, tematické koncepce (např. doprava, bydlení, školství či životní prostředí) i integrované strategie (ITI, CLLD) pro efektivní využití evropských fondů.</p>
+                    <div class="sdc-meta">
+                        <div class="meta-col">
+                            <h4 data-i18n="sdc_offered_services">Nabízené služby</h4>
+                            <ul data-i18n-html="s1_c1_services_list">
+                                <li>Strategie rozvoje – měst, obcí, krajů, regionů, organizací</li>
+                                <li>Tematické koncepce a plány – v oblasti školství, sportu, bydlení, bezpečnosti, sociálních služeb, životního prostředí, cestovního ruchu aj.</li>
+                                <li>Integrované strategie pro využití integrovaných nástrojů (ITI, CLLD)</li>
+                                <li>Procesní a metodické poradenství</li>
+                                <li>Strategické řízení a monitoring</li>
+                            </ul>
+                        </div>
+                        <div class="meta-col">
+                            <h4 data-i18n="sdc_references_head">Reference</h4>
+                            <ul data-i18n-html="s1_c1_refs_list">
+                                <li><a href="#" data-modal="modal-ref-olomouc">Strategický plán rozvoje města Olomouce pro období 2026–2032</a></li>
+                                <li><a href="#" data-modal="modal-ref-cerncany">Strategický plán rozvoje obce Čerčany 2025+</a></li>
+                                <li>Strategický plán rozvoje města Budyně nad Ohří</li>
+                                <li>Strategický plán rozvoje města Milovice</li>
+                                <li><a href="#" data-modal="modal-ref-uch">Integrovaná strategie ústecko-chomutovské aglomerace 2021–2027</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="partner-row" data-i18n-html="s1_c1_partners">
+                        <strong>Spolupracující organizace:</strong> Studio Acht, Výzkumy Soukup, B-inside
+                    </div>
+                    <button class="btn-contact-person"
+                        data-name="Mgr. Josef Miškovský, Ph.D."
+                        data-role="Senior konzultant"
+                        data-email="miskovsky@spfgroup.org"
+                        data-phone="+420737487585"
+                        data-phone-display="737 487 585"
+                        data-photo="assets/team/silhouette-male.svg"
+                        data-i18n-html="btn_contact_person">
+                        <i class="fa-solid fa-address-card" aria-hidden="true"></i> Kontaktní osoba
+                    </button>
+                </div>
+            </div>
+
+            <!-- 2. Strategie rozvoje a využití území -->
+            <div class="service-detail-card" id="strategie-uzemi">
+                <div class="sdc-header">
+                    <div class="sdc-icon" aria-hidden="true"><i class="fa-solid fa-map"></i></div>
+                    <div class="sdc-title-wrap">
+                        <h2 class="sdc-title" data-i18n="s1_c2_title">Strategie rozvoje a využití území</h2>
+                        <p class="sdc-tagline" data-i18n="s1_c2_tagline">Navrhujeme využití území s maximální hodnotou pro investory, obyvatele i veřejný sektor.</p>
+                    </div>
+                </div>
+                <div class="sdc-body">
+                    <p data-i18n="s1_c2_p1">Naše studie jdou nad rámec klasického územního plánování. Kombinujeme urbanistický, ekonomický i environmentální pohled a navrhujeme řešení, která dávají smysl v praxi i z hlediska financování. Analyzujeme potenciál a limity území a připravujeme varianty jeho využití s ohledem na ekonomickou návratnost, územní souvislosti i regulační rámec.</p>
+                    <p data-i18n="s1_c2_p2">Specializujeme se zejména na transformační území a brownfieldy, kde nastavujeme realistický model rozvoje – definovat nové využití, nastavit parametry rozvoje a připravit projekty včetně finanční struktury a implementace.</p>
+                    <p data-i18n="s1_c2_p3">Každý projekt řešíme na míru – od rychlých studií až po komplexní návrhy s účastí odborníků napříč obory. Výsledkem je jasný a realizovatelný koncept dalšího rozvoje území.</p>
+                    <div class="sdc-meta">
+                        <div class="meta-col">
+                            <h4 data-i18n="sdc_offered_services">Nabízené služby</h4>
+                            <ul data-i18n-html="s1_c2_services_list">
+                                <li>Studie rozvoje / využití definovaného území
+                                    <ul>
+                                        <li>Rozvojová zóna, transformační zóna, brownfield atd.</li>
+                                        <li>Návrh funkčního využití území včetně urbanistického návrhu, organizačního zabezpečení, finančního plánu a finančních zdrojů.</li>
+                                    </ul>
+                                </li>
+                                <li>Studie využití konkrétního nevyužívaného objektu, objektu s historickou hodnotou apod.
+                                    <ul>
+                                        <li>Nalezení vhodného využití, stanovení technického řešení, kalkulace nákladů, návrh financování.</li>
+                                    </ul>
+                                </li>
+                                <li>Studie proveditelnosti záměrů rozvoje území, konverze nebo novostaveb budov
+                                    <ul>
+                                        <li>Posouzení technické a ekonomické proveditelnosti záměru, doporučení efektivního řešení.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="meta-col">
+                            <h4 data-i18n="sdc_references_head">Reference</h4>
+                            <ul data-i18n-html="s1_c2_refs_list">
+                                <li><a href="#" data-modal="modal-ref-solo-susice">Rozvojová studie konverze a budoucího využití zóny bývalého areálu SOLO Sušice</a></li>
+                                <li><a href="#" data-modal="modal-ref-decin">Studie využitelnosti území rozvojové zóny Děčín – východní nádraží</a></li>
+                                <li>Studie o nové využití brownfieldu – objekt bývalých lázní v Chomutově</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="partner-row" data-i18n-html="s1_c2_partners">
+                        <strong>Spolupracující organizace:</strong> Studio Acht
+                    </div>
+                    <button class="btn-contact-person"
+                        data-name="Mgr. Josef Mareš"
+                        data-role="Senior konzultant"
+                        data-email="mares@spfgroup.org"
+                        data-phone="+420732432104"
+                        data-phone-display="732 432 104"
+                        data-photo="assets/team/silhouette-male.svg"
+                        data-i18n-html="btn_contact_person">
+                        <i class="fa-solid fa-address-card" aria-hidden="true"></i> Kontaktní osoba
+                    </button>
+                </div>
+            </div>
+
+            <!-- 3. Evaluace strategií, programů a projektů -->
+            <div class="service-detail-card" id="evaluace">
+                <div class="sdc-header">
+                    <div class="sdc-icon" aria-hidden="true"><i class="fa-solid fa-clipboard-list"></i></div>
+                    <div class="sdc-title-wrap">
+                        <h2 class="sdc-title" data-i18n="s1_c3_title">Evaluace strategií, programů a projektů</h2>
+                        <p class="sdc-tagline" data-i18n="s1_c3_tagline">Vyhodnocujeme, co má skutečný dopad – a kde se ztrácí efektivita.</p>
+                    </div>
+                </div>
+                <div class="sdc-body">
+                    <p data-i18n="s1_c3_p1">Hodnotíme strategie, programy i projekty v různých fázích jejich životního cyklu (ex-ante, průběžné i ex-post) a posuzujeme jejich přínosy, dopady i kvalitu realizace.</p>
+                    <p data-i18n="s1_c3_p2">Kombinujeme kvantitativní i kvalitativní přístupy, abychom odhalili nejen výsledky, ale i příčiny jejich úspěchu či selhání.</p>
+                    <p data-i18n="s1_c3_p3">Výstupy převádíme do konkrétních doporučení, která pomáhají zvyšovat efektivitu, kvalitu realizovaných opatření.</p>
+                    <div class="sdc-meta">
+                        <div class="meta-col">
+                            <h4 data-i18n="sdc_offered_services">Nabízené služby</h4>
+                            <ul data-i18n-html="s1_c3_services_list">
+                                <li>Ex-ante, průběžné a ex-post evaluace</li>
+                                <li>Evaluace dopadů programů a strategií</li>
+                                <li>Procesní a implementační evaluace</li>
+                                <li>Participativní přístup k evaluacím</li>
+                            </ul>
+                        </div>
+                        <div class="meta-col">
+                            <h4 data-i18n="sdc_references_head">Reference</h4>
+                            <ul data-i18n-html="s1_c3_refs_list">
+                                <li><a href="#" data-modal="modal-ref-clld">Procesní evaluace implementace integrovaného nástroje CLLD</a></li>
+                                <li><a href="#" data-modal="modal-ref-iti-praha">Ex-post evaluace ITI Pražské metropolitní oblasti</a></li>
+                                <li>Závěrečná evaluace IPRÚ Mladá Boleslav</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="partner-row" data-i18n-html="s1_c3_partners">
+                        <strong>Spolupracující organizace:</strong> PWC ČR, Naviga Evaluation &amp; Advisory
+                    </div>
+                    <button class="btn-contact-person"
+                        data-name="Mgr. Gabriela Šulmanová"
+                        data-role="Konzultantka"
+                        data-email="sulmanova@spfgroup.org"
+                        data-phone="+420777630585"
+                        data-phone-display="777 630 585"
+                        data-photo="assets/team/silhouette-female.svg"
+                        data-i18n-html="btn_contact_person">
+                        <i class="fa-solid fa-address-card" aria-hidden="true"></i> Kontaktní osoba
+                    </button>
+                </div>
+            </div>
+
+            <!-- 4. Řešení v oblasti sociálních služeb -->
+            <div class="service-detail-card" id="socialni-sluzby">
+                <div class="sdc-header">
+                    <div class="sdc-icon" aria-hidden="true"><i class="fa-solid fa-handshake"></i></div>
+                    <div class="sdc-title-wrap">
+                        <h2 class="sdc-title" data-i18n="s1_c4_title">Řešení v oblasti sociálních služeb</h2>
+                        <p class="sdc-tagline" data-i18n="s1_c4_tagline">Navrhujeme systém sociálních služeb, který odpovídá skutečným potřebám lidí a je dlouhodobě udržitelný.</p>
+                    </div>
+                </div>
+                <div class="sdc-body">
+                    <p data-i18n="s1_c4_p1">Analyzujeme potřeby obyvatel, kapacity služeb, identifikujeme klíčové problémy a navrhujeme efektivní a udržitelná řešení včetně jejich financování.</p>
+                    <p data-i18n="s1_c4_p2">Opíráme se o data, terénní šetření i spolupráci s aktéry v území. Díky tomu nastavujeme služby, které odpovídají reálné poptávce a přispívají k dlouhodobé udržitelnosti systému.</p>
+                    <p data-i18n="s1_c4_p3">Výsledkem je praktický a realizovatelný návrh rozvoje sociálních služeb, který zvyšuje jejich dostupnost, kvalitu i efektivitu.</p>
+                    <div class="sdc-meta">
+                        <div class="meta-col">
+                            <h4 data-i18n="sdc_offered_services">Nabízené služby</h4>
+                            <ul data-i18n-html="s1_c4_services_list">
+                                <li>Komunitní či střednědobé plány rozvoje sociálních služeb</li>
+                                <li>Zjišťování potřeby poskytování sociálních služeb</li>
+                                <li>Demografické studie území</li>
+                                <li>Vzdělávání v oblasti plánování a řízení sociálních služeb</li>
+                                <li>Porovnání kapacit sociálních služeb (referenční kapacity)</li>
+                                <li>Analýza financování sociálních služeb v území včetně prognóz</li>
+                            </ul>
+                        </div>
+                        <div class="meta-col">
+                            <h4 data-i18n="sdc_references_head">Reference</h4>
+                            <ul data-i18n-html="s1_c4_refs_list">
+                                <li>Průzkum četnosti osob se specifickými potřebami – Královehradecký kraj</li>
+                                <li><a href="#" data-modal="modal-ref-ustecky-kraj">Analýza potřebnosti sociálních služeb pro osoby s poruchou autistického spektra v Ústeckém kraji</a></li>
+                                <li><a href="#" data-modal="modal-ref-jihoceskykraj">Analýza potřebnosti sociálních služeb pro seniory s psychiatrickým onemocněním na území Jihočeského kraje</a></li>
+                                <li>Zpracování nového střednědobého plánu rozvoje sociálních a návazných služeb SO ORP Mladá Boleslav na období 2027–2031</li>
+                                <li>Komunitní plánování sociálních služeb na území ORP Mnichovo Hradiště</li>
+                                <li><a href="#" data-modal="modal-ref-mb-socialni">Sociálně-bezpečnostní audit a koncepce Statutárního města Mladá Boleslav</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="partner-row" data-i18n-html="s1_c4_partners">
+                        <strong>Spolupracující organizace:</strong> B-inside, ACoRD CZ, Výzkumy Soukup, CpKP Střední Čechy
+                    </div>
+                    <button class="btn-contact-person"
+                        data-name="Bc. Ladislav Marek"
+                        data-role="Konzultant"
+                        data-email="marek@spfgroup.org"
+                        data-phone="+420702064653"
+                        data-phone-display="702 064 653"
+                        data-photo="assets/team/silhouette-male.svg"
+                        data-i18n-html="btn_contact_person">
+                        <i class="fa-solid fa-address-card" aria-hidden="true"></i> Kontaktní osoba
+                    </button>
+                </div>
+            </div>
+
+            <!-- 5. Strategie a koncepce cestovního ruchu -->
+            <div class="service-detail-card" id="cestovni-ruch">
+                <div class="sdc-header">
+                    <div class="sdc-icon" aria-hidden="true"><i class="fa-solid fa-plane"></i></div>
+                    <div class="sdc-title-wrap">
+                        <h2 class="sdc-title" data-i18n="s1_c5_title">Strategie a koncepce cestovního ruchu</h2>
+                        <p class="sdc-tagline" data-i18n="s1_c5_tagline">Rozvíjíme cestovní ruch tak, aby přinášel hodnotu území i jeho obyvatelům.</p>
+                    </div>
+                </div>
+                <div class="sdc-body">
+                    <p data-i18n="s1_c5_p1">Na základě dat a analýz hodnotíme potenciál destinace, návštěvnost i nabídku služeb a navrhujeme konkrétní kroky v oblasti infrastruktury, marketingu i řízení destinace.</p>
+                    <p data-i18n="s1_c5_p2">Navrhujeme provázaná opatření v oblasti infrastruktury, marketingu i řízení destinace.</p>
+                    <p data-i18n="s1_c5_p3">Důraz klademe na ekonomický přínos, udržitelnost a efektivní spolupráci veřejného a soukromého sektoru.</p>
+                    <div class="sdc-meta">
+                        <div class="meta-col">
+                            <h4 data-i18n="sdc_offered_services">Nabízené služby</h4>
+                            <ul data-i18n-html="s1_c5_services_list">
+                                <li>Strategie rozvoje cestovního ruchu – měst, obcí, krajů, regionů</li>
+                                <li>Koncepce rozvoje dílčích segmentů cestovního ruchu
+                                    <ul>
+                                        <li>Generely a koncepce cyklistické dopravy, turistické dopravy, turistických tras apod.</li>
+                                    </ul>
+                                </li>
+                                <li>Marketingové průzkumy a koncepce v cestovním ruchu</li>
+                                <li>Kvalitativní a kvantitativní šetření (mezi návštěvníky, firmami, obcemi apod. v cestovním ruchu)</li>
+                                <li>Návrhy modelů destinačního řízení a financování rozvoje turismu</li>
+                                <li>Studie proveditelnosti projektů a záměrů v oblasti cestovního ruchu</li>
+                            </ul>
+                        </div>
+                        <div class="meta-col">
+                            <h4 data-i18n="sdc_references_head">Reference</h4>
+                            <ul data-i18n-html="s1_c5_refs_list">
+                                <li><a href="#" data-modal="modal-ref-stredocesky-cr">Program rozvoje cestovního ruchu Středočeského kraje</a></li>
+                                <li>Strategie rozvoje cestovního ruchu Ústeckého kraje</li>
+                                <li>Strategie rozvoje cestovního ruchu v regionu Krkonoše</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="partner-row" data-i18n-html="s1_c5_partners">
+                        <strong>Spolupracující organizace:</strong> Regionální rozvojová agentura Ústeckého kraje
+                    </div>
+                    <button class="btn-contact-person"
+                        data-name="Mgr. Josef Miškovský, Ph.D."
+                        data-role="Senior konzultant"
+                        data-email="miskovsky@spfgroup.org"
+                        data-phone="+420737487585"
+                        data-phone-display="737 487 585"
+                        data-photo="assets/team/silhouette-male.svg"
+                        data-i18n-html="btn_contact_person">
+                        <i class="fa-solid fa-address-card" aria-hidden="true"></i> Kontaktní osoba
+                    </button>
+                </div>
+            </div>
+
+            <!-- 6. Dopravní plánování -->
+            <div class="service-detail-card" id="doprava">
+                <div class="sdc-header">
+                    <div class="sdc-icon" aria-hidden="true"><i class="fa-solid fa-train"></i></div>
+                    <div class="sdc-title-wrap">
+                        <h2 class="sdc-title" data-i18n="s1_c6_title">Dopravní plánování</h2>
+                        <p class="sdc-tagline" data-i18n="s1_c6_tagline">Navrhujeme dopravní řešení, která optimalizují fungování území jako celku.</p>
+                    </div>
+                </div>
+                <div class="sdc-body">
+                    <p data-i18n="s1_c6_p1">Plánujeme dopravu jako funkční celek – s ohledem na potřeby obyvatel, rozvoj území i kvalitu životního prostředí. Neřešíme jen infrastrukturu, ale i to, jak se lidé skutečně pohybují a jak se jejich potřeby budou měnit.</p>
+                    <p data-i18n="s1_c6_p2">Naší klíčovou službou je tvorba plánů udržitelné městské mobility (PUMM), které představují komplexní strategii dopravy v území. Propojují jednotlivé druhy dopravy, reagují na demografický vývoj i změny ve využití území a hledají rovnováhu mezi mobilitou a kvalitou života. Vedle strategických dokumentů zpracováváme také dopravní a urbanistické studie, které řeší konkrétní situace v území – například dopravní obsluhu nových lokalit nebo změny v dopravním režimu. Specializujeme se i na tematické studie (např. v oblasti veřejné dopravy, cyklodopravy, vodíkové a elektromobility).</p>
+                    <p data-i18n="s1_c6_p3">Opíráme se o data i praxi: analyzujeme dopravní chování obyvatel, modelujeme dopravní zatížení, zapojujeme klíčové aktéry a komunikujeme návrhy s veřejností.</p>
+                    <div class="sdc-meta">
+                        <div class="meta-col">
+                            <h4 data-i18n="sdc_offered_services">Nabízené služby</h4>
+                            <ul data-i18n-html="s1_c6_services_list">
+                                <li>Plán udržitelné městské mobility</li>
+                                <li>Dopravní studie a analýzy</li>
+                                <li>Zpracování výstupů do dopravních projektů</li>
+                                <li>Příprava dotačních žádostí a souvisejících podkladů pro dopravní projekty
+                                    <ul>
+                                        <li>Včetně zpracování studií proveditelnosti</li>
+                                    </ul>
+                                </li>
+                                <li>Evaluace dopravních projektů a politik</li>
+                                <li>Studie rozvoje elektromobility a vodíkové mobility</li>
+                            </ul>
+                        </div>
+                        <div class="meta-col">
+                            <h4 data-i18n="sdc_references_head">Reference</h4>
+                            <ul data-i18n-html="s1_c6_refs_list">
+                                <li>Plán udržitelné městské mobility Liberec – Jablonec n. Nisou</li>
+                                <li><a href="#" data-modal="modal-ref-mb-mobilita">Plán udržitelné mobility statutárního města Mladá Boleslav</a></li>
+                                <li>Studie elektromobility pro město Mladá Boleslav</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="partner-row" data-i18n-html="s1_c6_partners">
+                        <strong>Spolupracující organizace:</strong> NDCon, Výzkumy Soukup, Studio Acht
+                    </div>
+                    <button class="btn-contact-person"
+                        data-name="Mgr. Josef Mareš"
+                        data-role="Senior konzultant"
+                        data-email="mares@spfgroup.org"
+                        data-phone="+420732432104"
+                        data-phone-display="732 432 104"
+                        data-photo="assets/team/silhouette-male.svg"
+                        data-i18n-html="btn_contact_person">
+                        <i class="fa-solid fa-address-card" aria-hidden="true"></i> Kontaktní osoba
+                    </button>
+                </div>
+            </div>
+
+            <!-- 7. Strategie bydlení -->
+            <div class="service-detail-card" id="bydleni">
+                <div class="sdc-header">
+                    <div class="sdc-icon" aria-hidden="true"><i class="fa-solid fa-house"></i></div>
+                    <div class="sdc-title-wrap">
+                        <h2 class="sdc-title" data-i18n="s1_c7_title">Strategie bydlení</h2>
+                        <p class="sdc-tagline" data-i18n="s1_c7_tagline">Řešíme bydlení systematicky – na základě dat, reálných potřeb i budoucího vývoje.</p>
+                    </div>
+                </div>
+                <div class="sdc-body">
+                    <p data-i18n="s1_c7_p1">Bydlení vždy řešíme v širších souvislostech – ve vztahu k dopravě, urbanismu i sociální situaci obyvatel. Opíráme se o analýzy a prognózy, které nám umožňují přesně identifikovat problémy i příležitosti.</p>
+                    <p data-i18n="s1_c7_p2">Navrhujeme konkrétní opatření – od rozvoje bytového fondu přes dostupné a sociální bydlení až po nastavení dlouhodobé koncepce.</p>
+                    <p data-i18n="s1_c7_p3">Výsledkem je strategie, kterou lze skutečně realizovat, včetně návaznosti na financování.</p>
+                    <div class="sdc-meta">
+                        <div class="meta-col">
+                            <h4 data-i18n="sdc_offered_services">Nabízené služby</h4>
+                            <ul data-i18n-html="s1_c7_services_list">
+                                <li>Koncepce a strategie bydlení</li>
+                                <li>Analýzy potřeb v oblasti dostupného a sociálního bydlení včetně prognóz</li>
+                                <li>Analýzy absorpční kapacity bydlení</li>
+                                <li>Definování potřebnosti a kvantifikace potřeb skupin osob v bytové nouzi dle typologie ETHOS</li>
+                            </ul>
+                        </div>
+                        <div class="meta-col">
+                            <h4 data-i18n="sdc_references_head">Reference</h4>
+                            <ul data-i18n-html="s1_c7_refs_list">
+                                <li><a href="#" data-modal="modal-ref-pardubice-bydleni">Strategie bydlení města Pardubice</a></li>
+                                <li>Analýza absorpční kapacity bytového fondu obcí v rámci IPRÚ Mladá Boleslav</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="partner-row" data-i18n-html="s1_c7_partners">
+                        <strong>Spolupracující organizace:</strong> B-inside, ACoRD CZ, Studio Acht
+                    </div>
+                    <button class="btn-contact-person"
+                        data-name="Bc. Ladislav Marek"
+                        data-role="Konzultant"
+                        data-email="marek@spfgroup.org"
+                        data-phone="+420702064653"
+                        data-phone-display="702 064 653"
+                        data-photo="assets/team/silhouette-male.svg"
+                        data-i18n-html="btn_contact_person">
+                        <i class="fa-solid fa-address-card" aria-hidden="true"></i> Kontaktní osoba
+                    </button>
+                </div>
+            </div>
+
+            <!-- 8. Kvantitativní a kvalitativní výzkumy -->
+            <div class="service-detail-card" id="vyzkumy">
+                <div class="sdc-header">
+                    <div class="sdc-icon" aria-hidden="true"><i class="fa-solid fa-microscope"></i></div>
+                    <div class="sdc-title-wrap">
+                        <h2 class="sdc-title" data-i18n="s1_c8_title">Kvantitativní a kvalitativní výzkumy</h2>
+                        <p class="sdc-tagline" data-i18n="s1_c8_tagline">Dodáváme data, která umožňují dělat kvalifikovaná rozhodnutí.</p>
+                    </div>
+                </div>
+                <div class="sdc-body">
+                    <p data-i18n="s1_c8_p1">Realizujeme šetření, která přinášejí spolehlivé podklady pro strategie, projekty i jejich hodnocení. Zjišťujeme potřeby obyvatel, názory odborníků i reálné fungování služeb v území.</p>
+                    <p data-i18n="s1_c8_p2">Kombinujeme kvantitativní i kvalitativní metody – od dotazníkových šetření přes řízené rozhovory a fokusní skupiny až po veřejná projednání. Díky tomu získáváme jak kvantitativní data, tak hlubší porozumění souvislostem.</p>
+                    <p data-i18n="s1_c8_p3">Zajišťujeme interpretaci výsledků v kontextu rozhodovacích procesů. Výstupy slouží jako podklad pro strategie, řízení i evaluace.</p>
+                    <div class="sdc-meta">
+                        <div class="meta-col">
+                            <h4 data-i18n="sdc_offered_services">Nabízené služby</h4>
+                            <ul data-i18n-html="s1_c8_services_list">
+                                <li>Dotazníková šetření a ankety</li>
+                                <li>Fokusní skupiny a řízené rozhovory</li>
+                                <li>Participativní workshopy a veřejná fóra</li>
+                                <li>Evaluační návštěvy a zúčastněná pozorování</li>
+                                <li>Analýza dat a interpretace výsledků</li>
+                                <li>Výzkumy pro strategie, evaluace i investiční projekty</li>
+                            </ul>
+                        </div>
+                        <div class="meta-col">
+                            <h4 data-i18n="sdc_references_head">Reference</h4>
+                            <ul data-i18n-html="s1_c8_refs_list">
+                                <li>Řízené rozhovory s regionálními osobnostmi a dotazníkové šetření mezi starosty měst a obcí na Rychnovsku</li>
+                                <li>Hodnocení a analýza návštěvnosti Ústeckého kraje s využitím dotazníkového šetření mezi populací Česka a Saska</li>
+                                <li><a href="#" data-modal="modal-ref-pruzkumy">Šetření názorů a potřeb obyvatel v městech a obcích Čerčany, Jesenice, Sušice</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="partner-row" data-i18n-html="s1_c8_partners">
+                        <strong>Spolupracující organizace:</strong> B-inside, ACoRD CZ
+                    </div>
+                    <button class="btn-contact-person"
+                        data-name="Mgr. Nela Hrušková"
+                        data-role="Konzultantka"
+                        data-email="hruskova@spfgroup.org"
+                        data-phone="+420603580690"
+                        data-phone-display="603 580 690"
+                        data-photo="assets/team/silhouette-female.svg"
+                        data-i18n-html="btn_contact_person">
+                        <i class="fa-solid fa-address-card" aria-hidden="true"></i> Kontaktní osoba
+                    </button>
+                </div>
+            </div>
+
+            <!-- 9. Životní prostředí a energetická účinnost -->
+            <div class="service-detail-card" id="zivotni-prostredi">
+                <div class="sdc-header">
+                    <div class="sdc-icon" aria-hidden="true"><i class="fa-solid fa-leaf"></i></div>
+                    <div class="sdc-title-wrap">
+                        <h2 class="sdc-title" data-i18n="s1_c9_title">Životní prostředí a energetická účinnost</h2>
+                        <p class="sdc-tagline" data-i18n="s1_c9_tagline">Navrhujeme řešení, která snižují negativní dopady na životní prostředí a zvyšují efektivitu využití zdrojů.</p>
+                    </div>
+                </div>
+                <div class="sdc-body">
+                    <p data-i18n="s1_c9_p1">Zaměřujeme se na následující oblasti: ovzduší, voda, oběhové hospodářství / odpady, staré ekologické zátěže, úspory energie, obnovitelné zdroje energie, zelená infrastruktura.</p>
+                    <p data-i18n="s1_c9_p2">Pomáháme připravovat projekty včetně jejich financování a realizace.</p>
+                    <div class="sdc-meta">
+                        <div class="meta-col">
+                            <h4 data-i18n="sdc_offered_services">Nabízené služby</h4>
+                            <ul data-i18n-html="s1_c9_services_list">
+                                <li>Strategie</li>
+                                <li>Analýzy a studie</li>
+                                <li>Dotační management – žádosti a jejich administrace</li>
+                            </ul>
+                        </div>
+                        <div class="meta-col">
+                            <h4 data-i18n="sdc_references_head">Reference</h4>
+                            <ul data-i18n-html="s1_c9_refs_list">
+                                <li>ČEZ</li>
+                                <li>Městské části Praha</li>
+                                <li>Ústecký kraj</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <button class="btn-contact-person"
+                        data-name="Ing. Petr Honskus"
+                        data-role="Jednatel"
+                        data-email="honskus@spfgroup.org"
+                        data-phone="+420606686997"
+                        data-phone-display="606 686 997"
+                        data-photo="assets/team/silhouette-male.svg"
+                        data-i18n-html="btn_contact_person">
+                        <i class="fa-solid fa-address-card" aria-hidden="true"></i> Kontaktní osoba
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- PAGE CTA -->
+    <section class="page-cta">
+        <div class="container">
+            <span class="section-label" data-i18n="page_cta_label">Spolupráce</span>
+            <h2 data-i18n="page_cta_title">Pojďme váš projekt rozvinout</h2>
+            <p data-i18n="s1_cta_p">Rezervujte si bezplatnou konzultaci a zjistěte, jak vám dokážeme pomoci.</p>
+            <a href="index.html#kontakt" class="btn-primary" data-i18n="page_cta_btn">Domluvit konzultaci zdarma</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div class="footer-col">
+                <div class="footer-logo">
+                    <img src="logo.png" alt="SPF Group" class="footer-logo-img" />
+                    <span class="footer-logo-text">SPF Group</span>
+                </div>
+                <p class="footer-tagline" data-i18n="footer_tagline">Plánujeme budoucnost, která dává smysl.</p>
+            </div>
+            <div class="footer-col">
+                <h4 data-i18n="footer_contact_head">Kontakt</h4>
+                <p>Bozděchova 99/6, 400 01 Ústí nad Labem</p>
+                <p>Na Pankráci 101, 140 00 Praha 4</p>
+                <p><a href="mailto:info@spfgroup.org">info@spfgroup.org</a></p>
+                <p><a href="tel:+420725811500">+420 725 811 500</a></p>
+            </div>
+            <div class="footer-col">
+                <h4 data-i18n="footer_reg_head">Registrace</h4>
+                <p data-i18n-html="footer_reg_court">Krajský soud v Ústí nad Labem<br />odd. C, vložka 33688</p>
+                <p data-i18n="footer_reg_date">Datum zápisu: 23. 7. 2004</p>
+                <p data-i18n="footer_reg_ico">IČO: 25492781 | DIČ: CZ25492781</p>
+            </div>
+            <div class="footer-col">
+                <h4 data-i18n="footer_nav_head">Navigace</h4>
+                <nav class="footer-nav">
+                    <a href="index.html#uvod" data-i18n="nav_uvod">Úvod</a>
+                    <a href="index.html#o-nas" data-i18n="nav_onas">O nás</a>
+                    <a href="index.html#sluzby" data-i18n="nav_sluzby">Služby</a>
+                    <a href="index.html#reference" data-i18n="nav_reference">Reference</a>
+                    <a href="index.html#blog" data-i18n="nav_blog">Blog</a>
+                    <a href="index.html#tym" data-i18n="nav_tym">Tým</a>
+                    <a href="index.html#kontakt" data-i18n="nav_kontakt">Kontakt</a>
+                </nav>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p data-i18n="footer_copyright">&copy; 2025 SPF Group, s.r.o. Všechna práva vyhrazena.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- PERSON MODAL -->
+    <div class="team-modal-overlay" id="teamModal">
+        <div class="team-modal-dialog">
+            <button class="team-modal-close" id="teamModalClose" aria-label="Zavřít" data-i18n-aria="aria_modal_close">&#10005;</button>
+            <div class="team-modal-body" id="teamModalBody"></div>
+        </div>
+    </div>
+
+    <!-- CONTENT MODAL -->
+    <div class="content-modal-overlay" id="contentModal" role="dialog" aria-modal="true">
+        <div class="content-modal-dialog">
+            <button class="team-modal-close" id="contentModalClose" aria-label="Zavřít" data-i18n-aria="aria_modal_close">&#10005;</button>
+            <div class="content-modal-body" id="contentModalBody"></div>
+        </div>
+    </div>
+
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

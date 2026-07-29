@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SPF Group – Strategický rozvoj měst a regionů</title>
+    <meta name="description"
+        content="SPF Group je partner pro strategický rozvoj měst, regionů a veřejných institucí v České republice. Strategické plánování, dotační poradenství a projektové řízení." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header id="header">
+        <div class="header-inner container">
+            <a href="#uvod" class="logo-link">
+                <img src="logo.png" alt="SPF Group logo" class="logo-img" />
+                <span class="logo-text">SPF Group</span>
+            </a>
+            <nav class="nav" id="nav">
+                <a href="#uvod" class="nav-link" data-i18n="nav_uvod">Úvod</a>
+                <a href="#o-nas" class="nav-link" data-i18n="nav_onas">O nás</a>
+                <a href="#sluzby" class="nav-link" data-i18n="nav_sluzby">Služby</a>
+                <a href="#reference" class="nav-link" data-i18n="nav_reference">Reference</a>
+                <a href="#blog" class="nav-link" data-i18n="nav_blog">Blog</a>
+                <a href="#tym" class="nav-link" data-i18n="nav_tym">Tým</a>
+                <a href="#kontakt" class="nav-link" data-i18n="nav_kontakt">Kontakt</a>
+            </nav>
+            <a href="#kontakt" class="btn-cta" data-i18n="nav_cta">Kontaktovat</a>
+            <div class="lang-switcher" id="langSwitcher" aria-label="Jazyk / Language">
+                <button class="lang-btn active" data-lang="cs">CZ</button>
+                <span class="lang-sep">|</span>
+                <button class="lang-btn" data-lang="en">EN</button>
+                <span class="lang-sep">|</span>
+                <button class="lang-btn" data-lang="de">DE</button>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="Menu" data-i18n-aria="aria_hamburger" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- HERO / ÚVOD -->
+    <section id="uvod" class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content container">
+            <div class="hero-badge" data-i18n="hero_badge">Strategický konzultant pro veřejný sektor</div>
+            <h1 class="hero-title" data-i18n-html="hero_title">Plánujeme budoucnost,<br /><span class="accent">která dává smysl.</span></h1>
+            <p class="hero-subtitle" data-i18n="hero_subtitle">Partner pro rozvoj měst, regionů a veřejných institucí v České republice.</p>
+            <div class="hero-tags" data-i18n-html="hero_tags">
+                <span>Strategické plánování</span>
+                <span>Prostorové plánování</span>
+                <span>Cestovní ruch</span>
+                <span>Evaluace</span>
+                <span>Doprava &amp; mobilita</span>
+                <span>Bydlení</span>
+                <span>Sociální služby</span>
+                <span>Životní prostředí &amp; energetická účinnost</span>
+                <span>Data &amp; výzkum</span>
+                <span>Dotační poradenství &amp; projektové řízení</span>
+            </div>
+            <div class="hero-cta-wrap">
+                <a href="#kontakt" class="btn-primary" data-i18n="hero_cta_btn">Domluvit úvodní konzultaci</a>
+                <p class="hero-cta-note" data-i18n="hero_cta_note">Bez závazků &bull; 30 minut online</p>
+            </div>
+        </div>
+        <div class="hero-scroll-hint">
+            <span data-i18n="hero_scroll">Posunout dolů</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- O NÁS -->
+    <section id="o-nas" class="section onas">
+        <div class="container">
+            <div class="section-grid two-col">
+                <div class="onas-text">
+                    <span class="section-label" data-i18n="onas_label">O nás</span>
+                    <h2 class="section-title" data-i18n="onas_title">Jsme partner pro rozvoj organizací, měst a regionů.</h2>
+                    <p class="body-text" data-i18n-html="onas_text1">Pomáháme veřejným institucím, soukromému sektoru i neziskovým organizacím s plánováním, řízením projektů a evaluacemi tak, aby měly <strong>měřitelný dopad a udržitelné výsledky</strong>.</p>
+                    <p class="body-text" data-i18n="onas_text2">SPF Group je etablovaná poradenská společnost působící od roku 2004, která pomáhá svým klientům efektivně plánovat a řídit jejich rozvoj.</p>
+                    <p class="body-text" data-i18n="onas_text3">Specializujeme se na strategické plánování, přípravu a řízení projektů a evaluace veřejných politik. Nabízíme komplexní podporu – od prvotní analýzy a návrhu řešení až po úspěšnou realizaci projektů, včetně využití dotačních příležitostí.</p>
+                    <p class="body-text" data-i18n="onas_text4">Propojujeme know-how s praktickým přístupem a pomáháme partnerům dosahovat udržitelných výsledků v oblastech regionálního rozvoje, sociálních služeb či životního prostředí.</p>
+                    <div class="stats-row">
+                        <div class="stat">
+                            <span class="stat-num">20+</span>
+                            <span class="stat-label" data-i18n="onas_stat1">let zkušeností</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-num">500+</span>
+                            <span class="stat-label" data-i18n="onas_stat2">projektů</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-num">16</span>
+                            <span class="stat-label" data-i18n="onas_stat3">expertů v týmu</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="onas-visual">
+                    <div class="onas-card-stack">
+                        <div class="onas-card card-1">
+                            <div class="card-icon" aria-hidden="true"><i class="fa-solid fa-building" aria-hidden="true"></i></div>
+                            <p data-i18n="onas_card1">Rozvoj měst a regionů</p>
+                        </div>
+                        <div class="onas-card card-2">
+                            <div class="card-icon" aria-hidden="true"><i class="fa-solid fa-chart-line" aria-hidden="true"></i></div>
+                            <p data-i18n="onas_card2">Data & analytika</p>
+                        </div>
+                        <div class="onas-card card-3">
+                            <div class="card-icon" aria-hidden="true"><i class="fa-solid fa-globe" aria-hidden="true"></i></div>
+                            <p data-i18n="onas_card3">Udržitelná řešení</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SLUŽBY -->
+    <section id="sluzby" class="section sluzby">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label" data-i18n="sluzby_label">Naše služby</span>
+                <h2 class="section-title" data-i18n="sluzby_title">Co pro vás dokážeme udělat</h2>
+            </div>
+
+            <!-- Strategické plánování -->
+            <div class="service-block">
+                <div class="service-block-header">
+                    <div class="service-num">01</div>
+                    <div>
+                        <h3 class="service-title" data-i18n="sluzby1_title">Strategické plánování</h3>
+                        <p class="service-lead" data-i18n="sluzby1_lead">Tvoříme strategie, které mají smysl, jsou realizovatelné a podložené daty.</p>
+                    </div>
+                </div>
+                <div class="service-grid">
+                    <a href="sekce-01.html#strategie-mест" class="service-card">
+                        <div class="service-icon" aria-hidden="true"><i class="fa-solid fa-landmark" aria-hidden="true"></i></div>
+                        <h4 data-i18n="sluzby1_c1_title">Strategie rozvoje měst a regionů</h4>
+                        <p data-i18n="sluzby1_c1_desc">Komplexní strategické dokumenty pro rozvoj územních celků od obcí po kraje.</p>
+                    </a>
+                    <a href="sekce-01.html#strategie-uzemi" class="service-card">
+                        <div class="service-icon" aria-hidden="true"><i class="fa-solid fa-map" aria-hidden="true"></i></div>
+                        <h4 data-i18n="sluzby1_c2_title">Strategie rozvoje a využití území</h4>
+                        <p data-i18n="sluzby1_c2_desc">Prostorové analýzy a koncepty využití území pro udržitelný rozvoj.</p>
+                    </a>
+                    <a href="sekce-01.html#evaluace" class="service-card">
+                        <div class="service-icon" aria-hidden="true"><i class="fa-solid fa-clipboard-list" aria-hidden="true"></i></div>
+                        <h4 data-i18n="sluzby1_c3_title">Evaluace strategií, programů a projektů</h4>
+                        <p data-i18n="sluzby1_c3_desc">Nezávislé hodnocení dopadů a efektivity realizovaných intervencí.</p>
+                    </a>
+                    <a href="sekce-01.html#socialni-sluzby" class="service-card">
+                        <div class="service-icon" aria-hidden="true"><i class="fa-solid fa-handshake" aria-hidden="true"></i></div>
+                        <h4 data-i18n="sluzby1_c4_title">Řešení v oblasti sociálních služeb</h4>
+                        <p data-i18n="sluzby1_c4_desc">Plánování a optimalizace sociálních služeb na komunitní i krajské úrovni.</p>
+                    </a>
+                    <a href="sekce-01.html#cestovni-ruch" class="service-card">
+                        <div class="service-icon" aria-hidden="true"><i class="fa-solid fa-plane" aria-hidden="true"></i></div>
+                        <h4 data-i18n="sluzby1_c5_title">Strategie a koncepce cestovního ruchu</h4>
+                        <p data-i18n="sluzby1_c5_desc">Destimační management a rozvoj turisticky atraktivních oblastí.</p>
+                    </a>
+                    <a href="sekce-01.html#doprava" class="service-card">
+                        <div class="service-icon" aria-hidden="true"><i class="fa-solid fa-train" aria-hidden="true"></i></div>
+                        <h4 data-i18n="sluzby1_c6_title">Dopravní plánování</h4>
+                        <p data-i18n="sluzby1_c6_desc">Plány mobility, dopravní studie a rozvoj udržitelné infrastruktury.</p>
+                    </a>
+                    <a href="sekce-01.html#bydleni" class="service-card">
+                        <div class="service-icon" aria-hidden="true"><i class="fa-solid fa-house" aria-hidden="true"></i></div>
+                        <h4 data-i18n="sluzby1_c7_title">Strategie bydlení</h4>
+                        <p data-i18n="sluzby1_c7_desc">Analýzy trhu s bydlením a strategie dostupného bydlení pro samosprávy.</p>
+                    </a>
+                    <a href="sekce-01.html#vyzkumy" class="service-card">
+                        <div class="service-icon" aria-hidden="true"><i class="fa-solid fa-microscope" aria-hidden="true"></i></div>
+                        <h4 data-i18n="sluzby1_c8_title">Kvantitativní a kvalitativní výzkumy</h4>
+                        <p data-i18n="sluzby1_c8_desc">Sběr a analýza dat, průzkumy veřejného mínění a socioekonomické studie.</p>
+                    </a>
+                    <a href="sekce-01.html#zivotni-prostredi" class="service-card">
+                        <div class="service-icon" aria-hidden="true"><i class="fa-solid fa-leaf" aria-hidden="true"></i></div>
+                        <h4 data-i18n="sluzby1_c9_title">Životní prostředí a energetická účinnost</h4>
+                        <p data-i18n="sluzby1_c9_desc">Strategie, analýzy a dotační podpora projektů v oblasti životního prostředí.</p>
+                    </a>
+                </div>
+                <div class="service-cta">
+                    <a href="sekce-01.html" class="btn-outline" data-i18n="sluzby1_cta">Zobrazit celou sekci →</a>
+                </div>
+            </div>
+
+            <!-- Dotační poradenství -->
+            <div class="service-block service-block-alt">
+                <div class="service-block-header">
+                    <div class="service-num">02</div>
+                    <div>
+                        <h3 class="service-title" data-i18n="sluzby2_title">Dotační poradenství a projektové řízení</h3>
+                        <p class="service-lead" data-i18n="sluzby2_lead">Pomůžeme vám získat finanční prostředky na váš projekt a zajistíme celý proces administrace a realizace.</p>
+                    </div>
+                </div>
+                <div class="service-grid grant-grid">
+                    <a href="sekce-02.html#dotacni-management" class="service-card grant-card">
+                        <div class="service-icon" aria-hidden="true"><i class="fa-solid fa-file-lines" aria-hidden="true"></i></div>
+                        <h4 data-i18n="sluzby2_c1_title">Žádosti o finanční podporu projektů</h4>
+                        <p data-i18n="sluzby2_c1_desc">Profesionální příprava a podání žádostí o dotace z EU i národních fondů.</p>
+                    </a>
+                    <a href="sekce-02.html#dotacni-management" class="service-card grant-card">
+                        <div class="service-icon" aria-hidden="true"><i class="fa-solid fa-gear" aria-hidden="true"></i></div>
+                        <h4 data-i18n="sluzby2_c2_title">Administrace a řízení dotačních projektů</h4>
+                        <p data-i18n="sluzby2_c2_desc">Kompletní projektový management od zahájení až po úspěšné uzavření projektu.</p>
+                    </a>
+                </div>
+                <div class="service-cta">
+                    <a href="sekce-02.html" class="btn-outline light" data-i18n="sluzby2_cta">Zobrazit celou sekci →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- REFERENCE & PARTNEŘI -->
+    <section id="reference" class="section reference">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label" data-i18n="ref_label">Reference</span>
+                <h2 class="section-title" data-i18n="ref_title">Naši klienti a partneři</h2>
+                <p class="section-sub" data-i18n="ref_sub">Spolupracujeme s městy, kraji i státní správou na projektech, které přinášejí konkrétní výsledky.</p>
+            </div>
+
+            <!-- Stats strip -->
+            <div class="ref-stats-strip">
+                <div class="ref-stat">
+                    <span class="ref-stat-num">20+</span>
+                    <span class="ref-stat-label" data-i18n="ref_stat1">let zkušeností</span>
+                </div>
+                <div class="ref-stat-sep"></div>
+                <div class="ref-stat">
+                    <span class="ref-stat-num">100+</span>
+                    <span class="ref-stat-label" data-i18n="ref_stat2">klientů</span>
+                </div>
+                <div class="ref-stat-sep"></div>
+                <div class="ref-stat">
+                    <span class="ref-stat-num">stovky</span>
+                    <span class="ref-stat-label" data-i18n="ref_stat3">realizací</span>
+                </div>
+            </div>
+
+            <!-- Partner loga -->
+            <p class="ref-clients-text" data-i18n-html="ref_clients_text">Mezi naše klienty patří například: <strong>Ústecký kraj, Mladá Boleslav, ŠKODA Auto</strong> a desítky dalších měst a institucí.</p>
+            <div class="partners-logos">
+                <div class="partner-logo">Ústecký kraj</div>
+                <div class="partner-logo">Mladá Boleslav</div>
+                <div class="partner-logo">ŠKODA Auto</div>
+                <div class="partner-logo">Karlovy Vary</div>
+            </div>
+
+            <!-- CTA -->
+            <div class="ref-cta-wrap">
+                <a href="#ref-projekty" class="btn-primary" data-i18n="ref_cta">Zobrazit projekty</a>
+            </div>
+
+            <!-- Filter + grid -->
+            <div id="ref-projekty">
+                <div class="ref-filter">
+                    <button class="ref-filter-btn active" data-filter="all" data-i18n="cat_all">Vše</button>
+                    <button class="ref-filter-btn" data-filter="strategicke-planovani" data-i18n="cat_strategic_planning">Strategické plánování</button>
+                    <button class="ref-filter-btn" data-filter="socialni-sluzby" data-i18n="cat_social_services">Sociální služby</button>
+                    <button class="ref-filter-btn" data-filter="strategie-uziti-uzemi" data-i18n="cat_land_use">Strategie využití území</button>
+                    <button class="ref-filter-btn" data-filter="evaluace" data-i18n="cat_evaluation">Evaluace</button>
+                    <button class="ref-filter-btn" data-filter="cestovni-ruch" data-i18n="cat_tourism">Cestovní ruch</button>
+                    <button class="ref-filter-btn" data-filter="dopravni-planovani" data-i18n="cat_transport">Dopravní plánování</button>
+                    <button class="ref-filter-btn" data-filter="bydleni" data-i18n="cat_housing">Bydlení</button>
+                    <button class="ref-filter-btn" data-filter="pruzkumy" data-i18n="cat_surveys">Průzkumy</button>
+                </div>
+
+                <div class="ref-grid">
+                    <div class="ref-card" data-category="strategicke-planovani">
+                        <span class="ref-card-tag" data-i18n="cat_strategic_planning">Strategické plánování</span>
+                        <h3 class="ref-card-title" data-i18n="ref_olomouc_title">Olomouc – Strategický plán rozvoje města pro období 2026–2032</h3>
+                        <p class="ref-card-desc" data-i18n="ref_olomouc_desc">Strategie propojující priority, projekty a financování. Komplexní dokument vzniklý za účasti odborné i laické veřejnosti.</p>
+                        <div class="ref-card-impact">
+                            <span class="ref-card-impact-label" data-i18n-html="ref_result"><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Výsledek</span>
+                            <p data-i18n="ref_olomouc_impact">Jasné priority, připravené projekty a podklad pro efektivní čerpání dotací.</p>
+                        </div>
+                        <button class="btn-outline ref-card-btn" data-modal="modal-ref-olomouc" data-i18n="ref_detail_btn">Detail →</button>
+                    </div>
+
+                    <div class="ref-card" data-category="strategicke-planovani">
+                        <span class="ref-card-tag" data-i18n="cat_strategic_planning">Strategické plánování</span>
+                        <h3 class="ref-card-title" data-i18n="ref_cerncany_title">Čerčany – Strategický plán rozvoje obce 2025+</h3>
+                        <p class="ref-card-desc" data-i18n="ref_cerncany_desc">Strategie rozvoje obce založená na datech a participaci. Návrh opatření a praktický plán pro řízení rozvoje po roce 2025.</p>
+                        <div class="ref-card-impact">
+                            <span class="ref-card-impact-label" data-i18n-html="ref_result"><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Výsledek</span>
+                            <p data-i18n="ref_cerncany_impact">Jasné priority, návrh konkrétních opatření a praktický plán pro řízení dalšího rozvoje obce.</p>
+                        </div>
+                        <button class="btn-outline ref-card-btn" data-modal="modal-ref-cerncany" data-i18n="ref_detail_btn">Detail →</button>
+                    </div>
+
+                    <div class="ref-card" data-category="socialni-sluzby">
+                        <span class="ref-card-tag ref-card-tag--red" data-i18n="cat_social_services">Sociální služby</span>
+                        <h3 class="ref-card-title" data-i18n="ref_ustecky_title">Ústecký kraj – Analýza potřebnosti sociálních služeb pro osoby s PAS</h3>
+                        <p class="ref-card-desc" data-i18n="ref_ustecky_desc">Zmapovali jsme potřeby osob s poruchou autistického spektra a dostupnost sociálních služeb v Ústeckém kraji.</p>
+                        <div class="ref-card-impact">
+                            <span class="ref-card-impact-label" data-i18n-html="ref_result"><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Výsledek</span>
+                            <p data-i18n="ref_ustecky_impact">Podklady pro plánování kapacit a cílené rozšiřování podpory v kraji.</p>
+                        </div>
+                        <button class="btn-outline ref-card-btn" data-modal="modal-ref-ustecky-kraj" data-i18n="ref_detail_btn">Detail →</button>
+                    </div>
+
+                    <div class="ref-card" data-category="strategicke-planovani">
+                        <span class="ref-card-tag" data-i18n="cat_strategic_planning">Strategické plánování</span>
+                        <h3 class="ref-card-title" data-i18n="ref_uch_title">Integrovaná strategie ústecko-chomutovské aglomerace 2021–2027</h3>
+                        <p class="ref-card-desc" data-i18n="ref_uch_desc">Integrovaná strategie připravená ve spolupráci měst, kraje a klíčových partnerů aglomerace.</p>
+                        <div class="ref-card-impact">
+                            <span class="ref-card-impact-label" data-i18n-html="ref_result"><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Výsledek</span>
+                            <p data-i18n="ref_uch_impact">Strategický rámec pro rozvoj aglomerace a přípravu integrovaných projektů.</p>
+                        </div>
+                        <button class="btn-outline ref-card-btn" data-modal="modal-ref-uch" data-i18n="ref_detail_btn">Detail →</button>
+                    </div>
+
+                    <div class="ref-card" data-category="strategie-uziti-uzemi">
+                        <span class="ref-card-tag" data-i18n="cat_land_use">Strategie využití území</span>
+                        <h3 class="ref-card-title" data-i18n="ref_solo_title">Rozvojová studie konverze a budoucího využití zóny bývalého areálu SOLO Sušice</h3>
+                        <p class="ref-card-desc" data-i18n="ref_solo_desc">Rozvojová studie konverze brownfieldu s návrhem budoucího využití, financování a etapizace.</p>
+                        <div class="ref-card-impact">
+                            <span class="ref-card-impact-label" data-i18n-html="ref_result"><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Výsledek</span>
+                            <p data-i18n="ref_solo_impact">Variantní řešení využití zóny a konkrétní postup její revitalizace a začlenění do rozvoje města.</p>
+                        </div>
+                        <button class="btn-outline ref-card-btn" data-modal="modal-ref-solo-susice" data-i18n="ref_detail_btn">Detail →</button>
+                    </div>
+
+                    <div class="ref-card" data-category="strategie-uziti-uzemi">
+                        <span class="ref-card-tag" data-i18n="cat_land_use">Strategie využití území</span>
+                        <h3 class="ref-card-title" data-i18n="ref_decin_title">Studie využitelnosti území rozvojové zóny Děčín – východní nádraží</h3>
+                        <p class="ref-card-desc" data-i18n="ref_decin_desc">Studie využitelnosti brownfieldu pro vznik nové rozvojové zóny ve vnitřním městě.</p>
+                        <div class="ref-card-impact">
+                            <span class="ref-card-impact-label" data-i18n-html="ref_result"><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Výsledek</span>
+                            <p data-i18n="ref_decin_impact">Návrh budoucího funkčního využití území.</p>
+                        </div>
+                        <button class="btn-outline ref-card-btn" data-modal="modal-ref-decin" data-i18n="ref_detail_btn">Detail →</button>
+                    </div>
+
+                    <div class="ref-card" data-category="evaluace">
+                        <span class="ref-card-tag" data-i18n="cat_evaluation">Evaluace</span>
+                        <h3 class="ref-card-title" data-i18n="ref_clld_title">Procesní evaluace implementace integrovaného nástroje CLLD</h3>
+                        <p class="ref-card-desc" data-i18n="ref_clld_desc">Vyhodnocení nastavení pravidel a procesů, které ovlivňovaly realizaci místního rozvoje.</p>
+                        <div class="ref-card-impact">
+                            <span class="ref-card-impact-label" data-i18n-html="ref_result"><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Výsledek</span>
+                            <p data-i18n="ref_clld_impact">Doporučení pro zjednodušení procesů, lepší koordinaci aktérů a efektivnější nastavení CLLD.</p>
+                        </div>
+                        <button class="btn-outline ref-card-btn" data-modal="modal-ref-clld" data-i18n="ref_detail_btn">Detail →</button>
+                    </div>
+
+                    <div class="ref-card" data-category="evaluace">
+                        <span class="ref-card-tag" data-i18n="cat_evaluation">Evaluace</span>
+                        <h3 class="ref-card-title" data-i18n="ref_iti_title">Ex-post evaluace ITI Pražské metropolitní oblasti</h3>
+                        <p class="ref-card-desc" data-i18n="ref_iti_desc">Závěrečné vyhodnocení přínosů integrovaných projektů pro rozvoj metropolitního území.</p>
+                        <div class="ref-card-impact">
+                            <span class="ref-card-impact-label" data-i18n-html="ref_result"><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Výsledek</span>
+                            <p data-i18n="ref_iti_impact">Vyhodnocení přínosů strategie, naplnění cílů a doporučení pro další období.</p>
+                        </div>
+                        <button class="btn-outline ref-card-btn" data-modal="modal-ref-iti-praha" data-i18n="ref_detail_btn">Detail →</button>
+                    </div>
+
+                    <div class="ref-card" data-category="socialni-sluzby">
+                        <span class="ref-card-tag ref-card-tag--red" data-i18n="cat_social_services">Sociální služby</span>
+                        <h3 class="ref-card-title" data-i18n="ref_jihoceskykraj_title">Jihočeský kraj – Analýza potřebnosti sociálních služeb pro seniory s psychiatrickým onemocněním</h3>
+                        <p class="ref-card-desc" data-i18n="ref_jihoceskykraj_desc">Zpracovali jsme analýzu zaměřenou na potřebnost sociálních služeb pro seniory s psychiatrickým onemocněním.</p>
+                        <div class="ref-card-impact">
+                            <span class="ref-card-impact-label" data-i18n-html="ref_result"><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Výsledek</span>
+                            <p data-i18n="ref_jihoceskykraj_impact">Návrh modelu sociálních služeb a kapacit pro potřeby plánování sociálních služeb v kraji.</p>
+                        </div>
+                        <button class="btn-outline ref-card-btn" data-modal="modal-ref-jihoceskykraj" data-i18n="ref_detail_btn">Detail →</button>
+                    </div>
+
+                    <div class="ref-card" data-category="socialni-sluzby">
+                        <span class="ref-card-tag ref-card-tag--red" data-i18n="cat_social_services">Sociální služby</span>
+                        <h3 class="ref-card-title" data-i18n="ref_mb_socialni_title">Sociálně-bezpečnostní audit a koncepce Statutárního města Mladá Boleslav</h3>
+                        <p class="ref-card-desc" data-i18n="ref_mb_socialni_desc">Audit bezpečnostní situace a koncepce pro koordinované řešení problémů ve městě.</p>
+                        <div class="ref-card-impact">
+                            <span class="ref-card-impact-label" data-i18n-html="ref_result"><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Výsledek</span>
+                            <p data-i18n="ref_mb_socialni_impact">Koordinovaný přístup k řešení situace a posílení vzájemné spolupráce v oblasti bezpečnosti a sociální prevence.</p>
+                        </div>
+                        <button class="btn-outline ref-card-btn" data-modal="modal-ref-mb-socialni" data-i18n="ref_detail_btn">Detail →</button>
+                    </div>
+
+                    <div class="ref-card" data-category="cestovni-ruch">
+                        <span class="ref-card-tag" data-i18n="cat_tourism">Cestovní ruch</span>
+                        <h3 class="ref-card-title" data-i18n="ref_stredocesky_title">Program rozvoje cestovního ruchu Středočeského kraje</h3>
+                        <p class="ref-card-desc" data-i18n="ref_stredocesky_desc">Program rozvoje cestovního ruchu založený na datech, výzkumech a spolupráci aktérů v území.</p>
+                        <div class="ref-card-impact">
+                            <span class="ref-card-impact-label" data-i18n-html="ref_result"><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Výsledek</span>
+                            <p data-i18n="ref_stredocesky_impact">Strategický rámec pro rozvoj cestovního ruchu ve Středočeském kraji v letech 2024–2030.</p>
+                        </div>
+                        <button class="btn-outline ref-card-btn" data-modal="modal-ref-stredocesky-cr" data-i18n="ref_detail_btn">Detail →</button>
+                    </div>
+
+                    <div class="ref-card" data-category="dopravni-planovani">
+                        <span class="ref-card-tag" data-i18n="cat_transport">Dopravní plánování</span>
+                        <h3 class="ref-card-title" data-i18n="ref_mb_mobilita_title">Plán udržitelné mobility statutárního města Mladá Boleslav</h3>
+                        <p class="ref-card-desc" data-i18n="ref_mb_mobilita_desc">Koncepce dopravy zaměřená na bezpečnější, plynulejší a udržitelnější pohyb po městě i jeho okolí.</p>
+                        <div class="ref-card-impact">
+                            <span class="ref-card-impact-label" data-i18n-html="ref_result"><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Výsledek</span>
+                            <p data-i18n="ref_mb_mobilita_impact">Soubor opatření pro rozvoj veřejné dopravy, cyklistiky, pěší dopravy, parkování i návazných dopravních projektů.</p>
+                        </div>
+                        <button class="btn-outline ref-card-btn" data-modal="modal-ref-mb-mobilita" data-i18n="ref_detail_btn">Detail →</button>
+                    </div>
+
+                    <div class="ref-card" data-category="bydleni">
+                        <span class="ref-card-tag" data-i18n="cat_housing">Bydlení</span>
+                        <h3 class="ref-card-title" data-i18n="ref_pardubice_title">Strategie bydlení města Pardubice</h3>
+                        <p class="ref-card-desc" data-i18n="ref_pardubice_desc">Strategie bydlení zaměřená na dostupnost, městský bytový fond a podporu specifických skupin obyvatel.</p>
+                        <div class="ref-card-impact">
+                            <span class="ref-card-impact-label" data-i18n-html="ref_result"><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Výsledek</span>
+                            <p data-i18n="ref_pardubice_impact">Dlouhodobá vize, konkrétní opatření a akční plán pro rozvoj bydlení v Pardubicích.</p>
+                        </div>
+                        <button class="btn-outline ref-card-btn" data-modal="modal-ref-pardubice-bydleni" data-i18n="ref_detail_btn">Detail →</button>
+                    </div>
+
+                    <div class="ref-card" data-category="pruzkumy">
+                        <span class="ref-card-tag" data-i18n="cat_surveys">Průzkumy</span>
+                        <h3 class="ref-card-title" data-i18n="ref_pruzkumy_title">Průzkumy názorů, potřeb a participace veřejnosti</h3>
+                        <p class="ref-card-desc" data-i18n="ref_pruzkumy_desc">Průzkumy a participace, které pomáhají zapojit obyvatele, aktéry i odbornou veřejnost do rozhodování.</p>
+                        <div class="ref-card-impact">
+                            <span class="ref-card-impact-label" data-i18n-html="ref_result"><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Výsledek</span>
+                            <p data-i18n="ref_pruzkumy_impact">Data, podněty a doporučení využitelná při tvorbě strategií, koncepcí a rozvojových plánů.</p>
+                        </div>
+                        <button class="btn-outline ref-card-btn" data-modal="modal-ref-pruzkumy" data-i18n="ref_detail_btn">Detail →</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BLOG -->
+    <section id="blog" class="section blog">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label" data-i18n="blog_label">Aktuality</span>
+                <h2 class="section-title" data-i18n="blog_title">Co je nového</h2>
+            </div>
+            <div class="blog-carousel-outer">
+                <button class="blog-nav-btn blog-nav-prev" aria-label="Předchozí" data-i18n-aria="blog_prev" disabled>
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                <div class="blog-carousel-wrap">
+                    <div class="blog-track">
+                        <article class="blog-card">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=600&h=400"
+                                alt="Na čem pracujeme v roce 2026" class="blog-img" loading="lazy" decoding="async" />
+                            <div class="blog-content">
+                                <div class="blog-cat" data-i18n="blog_cat7">Aktuálně</div>
+                                <h3 class="blog-title" data-i18n="blog_card7_title">Na čem pracujeme v roce 2026: rozvoj území, který stojí na datech i zkušenostech</h3>
+                                <p class="blog-excerpt" data-i18n="blog_card7_excerpt">Rok 2026 je ve SPF Group ve znamení evaluací, strategických dokumentů, rozvojových koncepcí a projektových příprav.</p>
+                                <div class="blog-meta">
+                                    <span class="blog-date" data-i18n="blog_card7_date">2. 6. 2026</span>
+                                    <button class="blog-link" data-modal="modal-blog-rok-2026" data-i18n="blog_read_more">Číst celé →</button>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="blog-card">
+                            <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?auto=format&fit=crop&q=80&w=600&h=400"
+                                alt="Náš rok 2025" class="blog-img" loading="lazy" decoding="async" />
+                            <div class="blog-content">
+                                <div class="blog-cat" data-i18n="blog_cat4">Roční ohlédnutí</div>
+                                <h3 class="blog-title" data-i18n="blog_card4_title">Náš rok 2025: když strategie nezůstávají na papíře</h3>
+                                <p class="blog-excerpt" data-i18n="blog_card4_excerpt">Rok 2025 byl pro SPF Group pestrý a plný projektů se společným cílem – pomáhat posouvat dobré nápady ke konkrétním výsledkům.</p>
+                                <div class="blog-meta">
+                                    <span class="blog-date" data-i18n="blog_card4_date">31. 12. 2025</span>
+                                    <button class="blog-link" data-modal="modal-blog-rok-2025" data-i18n="blog_read_more">Číst celé →</button>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="blog-card">
+                            <img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?auto=format&fit=crop&q=80&w=600&h=400"
+                                alt="Náš rok 2024" class="blog-img" loading="lazy" decoding="async" />
+                            <div class="blog-content">
+                                <div class="blog-cat" data-i18n="blog_cat5">Roční ohlédnutí</div>
+                                <h3 class="blog-title" data-i18n="blog_card5_title">Náš rok 2024: od rozvojových plánů po konkrétní proměny území</h3>
+                                <p class="blog-excerpt" data-i18n="blog_card5_excerpt">Rok 2024 pro nás byl ve znamení projektů, které se dotýkají každodenního života měst, obcí i regionů.</p>
+                                <div class="blog-meta">
+                                    <span class="blog-date" data-i18n="blog_card5_date">31. 12. 2024</span>
+                                    <button class="blog-link" data-modal="modal-blog-rok-2024" data-i18n="blog_read_more">Číst celé →</button>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="blog-card">
+                            <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&q=80&w=600&h=400"
+                                alt="Náš rok 2023" class="blog-img" loading="lazy" decoding="async" />
+                            <div class="blog-content">
+                                <div class="blog-cat" data-i18n="blog_cat6">Roční ohlédnutí</div>
+                                <h3 class="blog-title" data-i18n="blog_card6_title">Náš rok 2023: proměňovat potenciál území v konkrétní kroky</h3>
+                                <p class="blog-excerpt" data-i18n="blog_card6_excerpt">Rok 2023 byl pro SPF Group rokem rozvojových témat v celé jejich šíři – od strategií měst po studie proveditelnosti.</p>
+                                <div class="blog-meta">
+                                    <span class="blog-date" data-i18n="blog_card6_date">31. 12. 2023</span>
+                                    <button class="blog-link" data-modal="modal-blog-rok-2023" data-i18n="blog_read_more">Číst celé →</button>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="blog-card">
+                            <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=600&h=400"
+                                alt="Sociálně-bezpečnostní audit Mladá Boleslav" class="blog-img" loading="lazy" decoding="async" />
+                            <div class="blog-content">
+                                <div class="blog-cat" data-i18n="blog_cat1">Sociální politika</div>
+                                <h3 class="blog-title" data-i18n="blog_card1_title">Dokončení sociálně-bezpečnostního auditu a koncepce – Mladá Boleslav</h3>
+                                <p class="blog-excerpt" data-i18n="blog_card1_excerpt">Mladá Boleslav má novou koncepci pro posílení bezpečí ve městě.</p>
+                                <div class="blog-meta">
+                                    <span class="blog-date" data-i18n="blog_card1_date">3. 1. 2025</span>
+                                    <button class="blog-link" data-modal="modal-blog-01" data-i18n="blog_read_more">Číst celé →</button>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="blog-card">
+                            <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&q=80&w=600&h=400"
+                                alt="Blog 2" class="blog-img" loading="lazy" decoding="async" />
+                            <div class="blog-content">
+                                <div class="blog-cat" data-i18n="blog_cat2">Dotační poradenství</div>
+                                <h3 class="blog-title" data-i18n="blog_card2_title">Jak úspěšně čerpat dotace z nového programového období 2021–2027</h3>
+                                <p class="blog-excerpt" data-i18n="blog_card2_excerpt">Přehled klíčových podmínek a nejčastějších chyb, kterým se vyhnout při přípravě žádostí o podporu z fondů EU v aktuálním období...</p>
+                                <div class="blog-meta">
+                                    <span class="blog-date" data-i18n="blog_card2_date">28. února 2025</span>
+                                    <a href="#kontakt" class="blog-link" data-i18n="blog_read_more">Číst celé →</a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="blog-card">
+                            <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=600&h=400"
+                                alt="Blog 3" class="blog-img" loading="lazy" decoding="async" />
+                            <div class="blog-content">
+                                <div class="blog-cat" data-i18n="blog_cat3">Evaluace</div>
+                                <h3 class="blog-title" data-i18n="blog_card3_title">Jak měřit dopad strategií regionálního rozvoje – metodologie a praxe</h3>
+                                <p class="blog-excerpt" data-i18n="blog_card3_excerpt">Přehled osvědčených metod a přístupů k hodnocení strategických dokumentů a intervencí ve veřejném sektoru v podmínkách ČR...</p>
+                                <div class="blog-meta">
+                                    <span class="blog-date" data-i18n="blog_card3_date">10. února 2025</span>
+                                    <a href="#kontakt" class="blog-link" data-i18n="blog_read_more">Číst celé →</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <button class="blog-nav-btn blog-nav-next" aria-label="Další" data-i18n-aria="blog_next">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+            </div>
+            <div class="blog-dots"></div>
+        </div>
+    </section>
+
+    <!-- TÝM -->
+    <section id="tym" class="section tym">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label" data-i18n="tym_label">Náš tým</span>
+                <h2 class="section-title" data-i18n="tym_title">Seznamte se s námi</h2>
+                <p class="section-sub" data-i18n="tym_sub">Tým zkušených expertů s desetiletími praxe v rozvoji měst, regionů a veřejné správy.</p>
+            </div>
+            <div class="team-grid">
+
+                <div class="team-card">
+                    <div class="team-photo-wrap">
+                        <img src="assets/team/silhouette-male.svg" alt="Ing. Jan Vojtek" class="team-photo" loading="lazy" decoding="async" />
+                    </div>
+                    <div class="team-info">
+                        <h4 class="team-name">Ing. Jan Vojtek</h4>
+                        <p class="team-role" data-i18n="team_vojtek_role">Jednatel</p>
+                        <p class="team-contact"><a href="mailto:vojtek@spfgroup.org">vojtek@spfgroup.org</a></p>
+                        <p class="team-desc" data-i18n="team_vojtek_desc">Strategické a prostorové plánování, rozvoj území</p>
+                        <div class="team-tags" data-i18n-html="team_vojtek_tags"><span>Strategické plánování</span><span>Rozvoj území</span></div>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-photo-wrap">
+                        <img src="assets/team/silhouette-male.svg" alt="Ing. Jiří Wiesner, MBA" class="team-photo" loading="lazy" decoding="async" />
+                    </div>
+                    <div class="team-info">
+                        <h4 class="team-name">Ing. Jiří Wiesner, MBA</h4>
+                        <p class="team-role" data-i18n="team_wiesner_role">Jednatel</p>
+                        <p class="team-contact"><a href="mailto:wiesner@spfgroup.org">wiesner@spfgroup.org</a></p>
+                        <p class="team-desc" data-i18n="team_wiesner_desc">Projektové a finanční řízení, řízení rozvojových projektů</p>
+                        <div class="team-tags" data-i18n-html="team_wiesner_tags"><span>Projektové řízení</span><span>Finanční řízení</span></div>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-photo-wrap">
+                        <img src="assets/team/silhouette-male.svg" alt="Ing. Petr Honskus" class="team-photo" loading="lazy" decoding="async" />
+                    </div>
+                    <div class="team-info">
+                        <h4 class="team-name">Ing. Petr Honskus</h4>
+                        <p class="team-role" data-i18n="team_honskus_role">Jednatel</p>
+                        <p class="team-contact"><a href="mailto:honskus@spfgroup.org">honskus@spfgroup.org</a></p>
+                        <p class="team-desc" data-i18n="team_honskus_desc">Životní prostředí, odpadové hospodářství, udržitelný rozvoj</p>
+                        <div class="team-tags" data-i18n-html="team_honskus_tags"><span>Životní prostředí</span><span>Udržitelný rozvoj</span></div>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-photo-wrap">
+                        <img src="assets/team/silhouette-female.svg" alt="Mgr. Iva Michalová" class="team-photo" loading="lazy" decoding="async" />
+                    </div>
+                    <div class="team-info">
+                        <h4 class="team-name">Mgr. Iva Michalová</h4>
+                        <p class="team-role" data-i18n="team_michalova_role">Asistentka</p>
+                        <p class="team-contact"><a href="mailto:michalova@spfgroup.org">michalova@spfgroup.org</a></p>
+                        <p class="team-desc" data-i18n="team_michalova_desc">Projektová podpora, administrace projektů, komunikace s klienty</p>
+                        <div class="team-tags" data-i18n-html="team_michalova_tags"><span>Administrativa</span><span>Koordinace</span></div>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-photo-wrap">
+                        <img src="assets/team/silhouette-male.svg" alt="Mgr. Josef Miškovský, Ph.D." class="team-photo" loading="lazy" decoding="async" />
+                    </div>
+                    <div class="team-info">
+                        <h4 class="team-name">Mgr. Josef Miškovský, Ph.D.</h4>
+                        <p class="team-role" data-i18n="team_miskovsky_role">Senior konzultant</p>
+                        <p class="team-contact"><a href="mailto:miskovsky@spfgroup.org">miskovsky@spfgroup.org</a></p>
+                        <p class="team-desc" data-i18n="team_miskovsky_desc">Strategické a prostorové plánování, regionální rozvoj, výzkum</p>
+                        <div class="team-tags" data-i18n-html="team_miskovsky_tags"><span>Regionální rozvoj</span><span>Výzkum</span></div>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-photo-wrap">
+                        <img src="assets/team/silhouette-male.svg" alt="Mgr. Josef Mareš" class="team-photo" loading="lazy" decoding="async" />
+                    </div>
+                    <div class="team-info">
+                        <h4 class="team-name">Mgr. Josef Mareš</h4>
+                        <p class="team-role" data-i18n="team_mares_role">Senior konzultant</p>
+                        <p class="team-contact"><a href="mailto:mares@spfgroup.org">mares@spfgroup.org</a></p>
+                        <p class="team-desc" data-i18n="team_mares_desc">Strategické, prostorové a dopravní plánování, rozvoj území</p>
+                        <div class="team-tags" data-i18n-html="team_mares_tags"><span>Prostorové plánování</span><span>Doprava</span></div>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-photo-wrap">
+                        <img src="assets/team/silhouette-male.svg" alt="Bc. Ladislav Marek" class="team-photo" loading="lazy" decoding="async" />
+                    </div>
+                    <div class="team-info">
+                        <h4 class="team-name">Bc. Ladislav Marek</h4>
+                        <p class="team-role" data-i18n="team_marek_role">Senior Konzultant</p>
+                        <p class="team-contact"><a href="mailto:marek@spfgroup.org">marek@spfgroup.org</a></p>
+                        <p class="team-desc" data-i18n="team_marek_desc">Strategické plánování, sociální služby, komunitní plánování</p>
+                        <div class="team-tags" data-i18n-html="team_marek_tags"><span>Sociální služby</span><span>Komunitní plánování</span></div>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-photo-wrap">
+                        <img src="assets/team/silhouette-female.svg" alt="Mgr. Nela Hrušková" class="team-photo" loading="lazy" decoding="async" />
+                    </div>
+                    <div class="team-info">
+                        <h4 class="team-name">Mgr. Nela Hrušková</h4>
+                        <p class="team-role" data-i18n="team_hruskova_role">Konzultantka</p>
+                        <p class="team-contact"><a href="mailto:hruskova@spfgroup.org">hruskova@spfgroup.org</a></p>
+                        <p class="team-desc" data-i18n="team_hruskova_desc">Strategické a prostorové plánování, demografický vývoj a sociologická šetření</p>
+                        <div class="team-tags" data-i18n-html="team_hruskova_tags"><span>Prostorové plánování</span><span>Demografie</span></div>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-photo-wrap">
+                        <img src="assets/team/silhouette-male.svg" alt="Mgr. Jakub Benda" class="team-photo" loading="lazy" decoding="async" />
+                    </div>
+                    <div class="team-info">
+                        <h4 class="team-name">Mgr. Jakub Benda</h4>
+                        <p class="team-role" data-i18n="team_benda_role">konzultant</p>
+                        <p class="team-contact"><a href="mailto:benda@spfgroup.org">benda@spfgroup.org</a></p>
+                        <p class="team-desc" data-i18n="team_benda_desc">Strategické a prostorové plánování, projektové a finanční řízení</p>
+                        <div class="team-tags" data-i18n-html="team_benda_tags"><span>Strategické plánování</span><span>Projektové řízení</span></div>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-photo-wrap">
+                        <img src="assets/team/silhouette-female.svg" alt="Mgr. Gabriela Šulmanová" class="team-photo" loading="lazy" decoding="async" />
+                    </div>
+                    <div class="team-info">
+                        <h4 class="team-name">Mgr. Gabriela Šulmanová</h4>
+                        <p class="team-role" data-i18n="team_sulmanova_role">Konzultantka</p>
+                        <p class="team-contact"><a href="mailto:sulmanova@spfgroup.org">sulmanova@spfgroup.org</a></p>
+                        <p class="team-desc" data-i18n="team_sulmanova_desc">Strategické a prostorové plánování, projektové a finanční řízení</p>
+                        <div class="team-tags" data-i18n-html="team_sulmanova_tags"><span>Prostorové plánování</span><span>Projektové řízení</span></div>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-photo-wrap">
+                        <img src="assets/team/silhouette-female.svg" alt="Ing. Jana Tučková" class="team-photo" loading="lazy" decoding="async" />
+                    </div>
+                    <div class="team-info">
+                        <h4 class="team-name">Ing. Jana Tučková</h4>
+                        <p class="team-role" data-i18n="team_tuckova_role">Konzultantka</p>
+                        <p class="team-contact"><a href="mailto:tuckova@spfgroup.org">tuckova@spfgroup.org</a></p>
+                        <p class="team-desc" data-i18n="team_tuckova_desc">Projektové a finanční řízení, administrace projektů</p>
+                        <div class="team-tags" data-i18n-html="team_tuckova_tags"><span>Projektové řízení</span><span>Administrace</span></div>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-photo-wrap">
+                        <img src="assets/team/silhouette-female.svg" alt="Mgr. Tereza Bendová" class="team-photo" loading="lazy" decoding="async" />
+                    </div>
+                    <div class="team-info">
+                        <h4 class="team-name">Mgr. Tereza Bendová</h4>
+                        <p class="team-role" data-i18n="team_bendova_role">Konzultantka</p>
+                        <p class="team-contact"><a href="mailto:bendova@spfgroup.org">bendova@spfgroup.org</a></p>
+                        <p class="team-desc" data-i18n="team_bendova_desc">Projektové a finanční řízení, administrace projektů</p>
+                        <div class="team-tags" data-i18n-html="team_bendova_tags"><span>Projektové řízení</span><span>Administrace</span></div>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-photo-wrap">
+                        <img src="assets/team/silhouette-female.svg" alt="Ing. Iveta Holá" class="team-photo" loading="lazy" decoding="async" />
+                    </div>
+                    <div class="team-info">
+                        <h4 class="team-name">Ing. Iveta Holá</h4>
+                        <p class="team-role" data-i18n="team_hola_role">Konzultantka</p>
+                        <p class="team-contact"><a href="mailto:hola@spfgroup.org">hola@spfgroup.org</a></p>
+                        <p class="team-desc" data-i18n="team_hola_desc">Projektové a finanční řízení, administrace projektů</p>
+                        <div class="team-tags" data-i18n-html="team_hola_tags"><span>Projektové řízení</span><span>Administrace</span></div>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-photo-wrap">
+                        <img src="assets/team/silhouette-male.svg" alt="Ing. Jiří Třešňák" class="team-photo" loading="lazy" decoding="async" />
+                    </div>
+                    <div class="team-info">
+                        <h4 class="team-name">Ing. Jiří Třešňák</h4>
+                        <p class="team-role" data-i18n="team_tresnak_role">Konzultant</p>
+                        <p class="team-contact"><a href="mailto:tresnak@spfgroup.org">tresnak@spfgroup.org</a></p>
+                        <p class="team-desc" data-i18n="team_tresnak_desc">Projektové a finanční řízení, administrace projektů</p>
+                        <div class="team-tags" data-i18n-html="team_tresnak_tags"><span>Projektové řízení</span><span>Administrace</span></div>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-photo-wrap">
+                        <img src="assets/team/silhouette-female.svg" alt="Mgr. Zuzana Skřičková" class="team-photo" loading="lazy" decoding="async" />
+                    </div>
+                    <div class="team-info">
+                        <h4 class="team-name">Mgr. Zuzana Skřičková</h4>
+                        <p class="team-role" data-i18n="team_skrickova_role">Konzultantka</p>
+                        <p class="team-contact"><a href="mailto:skrickova.zuzana@gmail.com">skrickova.zuzana@gmail.com</a></p>
+                        <p class="team-desc" data-i18n="team_skrickova_desc">Komunitní plánování, sociální služby</p>
+                        <div class="team-tags" data-i18n-html="team_skrickova_tags"><span>Komunitní plánování</span><span>Sociální služby</span></div>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-photo-wrap">
+                        <img src="assets/team/silhouette-female.svg" alt="Mgr. Veronika Polášková" class="team-photo" loading="lazy" decoding="async" />
+                    </div>
+                    <div class="team-info">
+                        <h4 class="team-name">Mgr. Veronika Polášková</h4>
+                        <p class="team-role" data-i18n="team_polaskova_role">Konzultantka</p>
+                        <p class="team-desc" data-i18n="team_polaskova_desc">Komunitní plánování, sociální služby</p>
+                        <div class="team-tags" data-i18n-html="team_polaskova_tags"><span>Komunitní plánování</span><span>Sociální služby</span></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- KONTAKT -->
+    <section id="kontakt" class="section kontakt">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label" data-i18n="kontakt_label">Kontakt</span>
+                <h2 class="section-title" data-i18n="kontakt_title">Pojďme spolupracovat</h2>
+                <p class="section-sub" data-i18n="kontakt_sub">Rezervujte si bezplatnou konzultaci a zjistěte, jak vám můžeme pomoci.</p>
+            </div>
+            <div class="kontakt-grid">
+                <div class="kontakt-info">
+                    <h3>SPF Group, s.r.o.</h3>
+                    <div class="kontakt-items">
+                        <div class="kontakt-item">
+                            <div>
+                                <strong data-i18n="kontakt_hq">Hlavní sídlo</strong>
+                                <p>Bozděchova 99/6<br />400 01 Ústí nad Labem</p>
+                            </div>
+                        </div>
+                        <div class="kontakt-item">
+                            <div>
+                                <strong data-i18n="kontakt_branch">Pobočka Praha</strong>
+                                <p>Na Pankráci 101<br />140 00 Praha 4</p>
+                                <p style="margin-top:4px">Vlkova 7<br />130 00 Praha 3</p>
+                            </div>
+                        </div>
+                        <div class="kontakt-item">
+                            <div>
+                                <strong data-i18n="kontakt_email_label">E-mail</strong>
+                                <p><a href="mailto:info@spfgroup.org">info@spfgroup.org</a></p>
+                            </div>
+                        </div>
+                        <div class="kontakt-item">
+                            <div>
+                                <strong data-i18n="kontakt_phone_label">Telefon</strong>
+                                <p><a href="tel:+420725811500">+420 725 811 500</a></p>
+                            </div>
+                        </div>
+                        <div class="kontakt-item">
+                            <div>
+                                <strong data-i18n="kontakt_web_label">Web</strong>
+                                <p><a href="https://www.spfgroup.org" target="_blank" rel="noopener">www.spfgroup.org</a></p>
+                            </div>
+                        </div>
+                        <div class="kontakt-item">
+                            <div>
+                                <strong data-i18n="kontakt_id_label">Identifikace</strong>
+                                <p>IČO: 25492781</p>
+                                <p>DIČ: CZ25492781</p>
+                                <p><span data-i18n="kontakt_databox_label">Datová schránka</span>: cyg3mxc</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kontakt-form-wrap">
+                    <div class="kontakt-cta-box">
+                        <h3 data-i18n="kontakt_form_title">Rezervovat konzultaci</h3>
+                        <p data-i18n="kontakt_form_lead">Napište nám a domluvíme 30minutový online hovor zdarma.</p>
+                        <form class="kontakt-form" onsubmit="return false">
+                            <input type="text" placeholder="Vaše jméno" class="form-input" id="form-name" data-i18n-placeholder="form_name" />
+                            <input type="email" placeholder="E-mailová adresa" class="form-input" id="form-email" data-i18n-placeholder="form_email" />
+                            <input type="text" placeholder="Název organizace" class="form-input" id="form-org" data-i18n-placeholder="form_org" />
+                            <textarea placeholder="Jak vám můžeme pomoci?" class="form-textarea" id="form-msg" rows="4" data-i18n-placeholder="form_msg"></textarea>
+                            <button type="submit" class="btn-primary btn-full" id="form-submit" data-i18n="form_submit">Odeslat poptávku</button>
+                            <div class="form-status" id="form-status" role="status" aria-live="polite"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div class="footer-col">
+                <div class="footer-logo">
+                    <img src="logo.png" alt="SPF Group" class="footer-logo-img" />
+                    <span class="footer-logo-text">SPF Group</span>
+                </div>
+                <p class="footer-tagline" data-i18n="footer_tagline">Plánujeme budoucnost, která dává smysl.</p>
+            </div>
+            <div class="footer-col">
+                <h4 data-i18n="footer_contact_head">Kontakt</h4>
+                <p>Bozděchova 99/6, 400 01 Ústí nad Labem</p>
+                <p>Na Pankráci 101, 140 00 Praha 4</p>
+                <p>Vlkova 7, 130 00 Praha 3</p>
+                <p><a href="mailto:info@spfgroup.org">info@spfgroup.org</a></p>
+                <p><a href="tel:+420725811500">+420 725 811 500</a></p>
+            </div>
+            <div class="footer-col">
+                <h4 data-i18n="footer_reg_head">Registrace</h4>
+                <p data-i18n-html="footer_reg_court">Krajský soud v Ústí nad Labem<br />odd. C, vložka 33688</p>
+                <p data-i18n="footer_reg_date">Datum zápisu: 23. 7. 2004</p>
+                <p data-i18n="footer_reg_ico">IČO: 25492781 | DIČ: CZ25492781</p>
+            </div>
+            <div class="footer-col">
+                <h4 data-i18n="footer_nav_head">Navigace</h4>
+                <nav class="footer-nav">
+                    <a href="#uvod" data-i18n="nav_uvod">Úvod</a>
+                    <a href="#o-nas" data-i18n="nav_onas">O nás</a>
+                    <a href="#sluzby" data-i18n="nav_sluzby">Služby</a>
+                    <a href="#reference" data-i18n="nav_reference">Reference</a>
+                    <a href="#blog" data-i18n="nav_blog">Blog</a>
+                    <a href="#tym" data-i18n="nav_tym">Tým</a>
+                    <a href="#kontakt" data-i18n="nav_kontakt">Kontakt</a>
+                </nav>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p data-i18n="footer_copyright">&copy; 2025 SPF Group, s.r.o. Všechna práva vyhrazena.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- CONTENT MODAL (reference + blog) -->
+    <div class="content-modal-overlay" id="contentModal" role="dialog" aria-modal="true">
+        <div class="content-modal-dialog">
+            <button class="team-modal-close" id="contentModalClose" aria-label="Zavřít" data-i18n-aria="aria_modal_close">&#10005;</button>
+            <div class="content-modal-body" id="contentModalBody"></div>
+        </div>
+    </div>
+
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
