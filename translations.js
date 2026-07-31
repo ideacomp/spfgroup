@@ -220,6 +220,7 @@ window.SPF_I18N = {
     footer_reg_ico: 'IČO: 25492781 | DIČ: CZ25492781',
     footer_nav_head: 'Navigace',
     footer_copyright: '© 2025 SPF Group, s.r.o. Všechna práva vyhrazena.',
+    footer_credit: 'Vytvořil',
 
     'modal-ref-olomouc': `<div class="cmod-header"><span class="ref-card-tag">Strategické plánování</span><h2 class="cmod-title">Olomouc – Strategický plán rozvoje města pro období 2026–2032</h2><p class="cmod-lead">Strategie propojující priority, projekty a financování.</p></div><div class="ref-block"><p class="ref-block-title"><i class="fa-solid fa-circle-question" aria-hidden="true"></i> Zadání</p><p>Město Olomouc potřebovalo vytvořit strategii rozvoje, která bude sloužit jako reálný nástroj řízení a zároveň podklad pro přípravu a financování projektů.</p></div><div class="ref-block"><p class="ref-block-title"><i class="fa-solid fa-gears" aria-hidden="true"></i> Naše řešení</p><p>Zpracovali jsme komplexní strategii založenou na analytických podkladech a participaci klíčových aktérů. Součástí bylo:</p><ul><li>zapojení odborné i laické veřejnosti</li><li>návrh strategických cílů a opatření</li><li>vytvoření projektového zásobníku</li><li>nastavení systému implementace a řízení</li></ul></div><div class="ref-block ref-block--last"><p class="ref-block-title"><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Výsledek</p><p>Jasné priority, připravené projekty a podklad pro efektivní čerpání dotací.</p></div>`,
 
@@ -594,6 +595,7 @@ window.SPF_I18N = {
     footer_reg_ico: 'Company No.: 25492781 | VAT: CZ25492781',
     footer_nav_head: 'Navigation',
     footer_copyright: '© 2025 SPF Group, s.r.o. All rights reserved.',
+    footer_credit: 'Made by',
 
     'modal-ref-olomouc': `<div class="cmod-header"><span class="ref-card-tag">Strategic Planning</span><h2 class="cmod-title">Olomouc – Strategic City Development Plan 2026–2032</h2><p class="cmod-lead">A strategy connecting priorities, projects and funding.</p></div><div class="ref-block"><p class="ref-block-title"><i class="fa-solid fa-circle-question" aria-hidden="true"></i> Brief</p><p>The City of Olomouc needed to develop a strategic plan that would serve as a real management tool and a basis for preparing and funding projects.</p></div><div class="ref-block"><p class="ref-block-title"><i class="fa-solid fa-gears" aria-hidden="true"></i> Our Approach</p><p>We developed a comprehensive strategy based on analytical foundations and the participation of key stakeholders. This included:</p><ul><li>engagement of both professional and general public</li><li>design of strategic goals and measures</li><li>creation of a project pipeline</li><li>establishment of an implementation and management system</li></ul></div><div class="ref-block ref-block--last"><p class="ref-block-title"><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Result</p><p>Clear priorities, ready-to-implement projects and a basis for effective use of grant funding.</p></div>`,
 
@@ -968,6 +970,7 @@ window.SPF_I18N = {
     footer_reg_ico: 'IČO: 25492781 | DIČ: CZ25492781',
     footer_nav_head: 'Navigation',
     footer_copyright: '© 2025 SPF Group, s.r.o. Alle Rechte vorbehalten.',
+    footer_credit: 'Erstellt von',
 
     'modal-ref-olomouc': `<div class="cmod-header"><span class="ref-card-tag">Strategische Planung</span><h2 class="cmod-title">Olmütz – Strategischer Stadtentwicklungsplan 2026–2032</h2><p class="cmod-lead">Eine Strategie, die Prioritäten, Projekte und Finanzierung verknüpft.</p></div><div class="ref-block"><p class="ref-block-title"><i class="fa-solid fa-circle-question" aria-hidden="true"></i> Aufgabe</p><p>Die Stadt Olmütz benötigte eine Entwicklungsstrategie, die als echtes Steuerungsinstrument und als Grundlage für die Vorbereitung und Finanzierung von Projekten dienen sollte.</p></div><div class="ref-block"><p class="ref-block-title"><i class="fa-solid fa-gears" aria-hidden="true"></i> Unser Ansatz</p><p>Wir haben eine umfassende Strategie auf Basis analytischer Grundlagen und unter Beteiligung wichtiger Stakeholder erarbeitet. Dazu gehörten:</p><ul><li>Einbeziehung von Fachleuten und der breiten Öffentlichkeit</li><li>Entwurf strategischer Ziele und Maßnahmen</li><li>Erstellung einer Projektpipeline</li><li>Aufbau eines Implementierungs- und Steuerungssystems</li></ul></div><div class="ref-block ref-block--last"><p class="ref-block-title"><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Ergebnis</p><p>Klare Prioritäten, umsetzungsbereite Projekte und eine Grundlage für die effektive Nutzung von Fördermitteln.</p></div>`,
 
