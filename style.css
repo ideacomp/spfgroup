@@ -1541,25 +1541,21 @@ a {
   color: rgba(255, 255, 255, 0.35);
 }
 
-.footer-credit-bar .fcb-icon {
-  width: 18px;
-  height: 18px;
-  object-fit: contain;
-  vertical-align: middle;
-}
-
-.footer-credit-bar .fcb-word {
-  font-size: 13px;
-  font-weight: 800;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+.footer-credit-bar .fcb-logo-link {
+  display: inline-flex;
+  align-items: center;
   color: var(--white);
-  text-decoration: none;
   transition: color var(--transition);
 }
 
-.footer-credit-bar .fcb-word:hover {
+.footer-credit-bar .fcb-logo-link:hover {
   color: var(--blue-bright);
+}
+
+.footer-credit-bar .fcb-logo {
+  height: 24px;
+  width: auto;
+  display: block;
 }
 
 @media (max-width: 600px) {
