@@ -854,11 +854,12 @@
                     <div class="kontakt-cta-box">
                         <h3 data-i18n="kontakt_form_title">Rezervovat konzultaci</h3>
                         <p data-i18n="kontakt_form_lead">Napište nám a domluvíme 30minutový online hovor zdarma.</p>
-                        <form class="kontakt-form" onsubmit="return false">
-                            <input type="text" placeholder="Vaše jméno" class="form-input" id="form-name" data-i18n-placeholder="form_name" />
-                            <input type="email" placeholder="E-mailová adresa" class="form-input" id="form-email" data-i18n-placeholder="form_email" />
-                            <input type="text" placeholder="Název organizace" class="form-input" id="form-org" data-i18n-placeholder="form_org" />
-                            <textarea placeholder="Jak vám můžeme pomoci?" class="form-textarea" id="form-msg" rows="4" data-i18n-placeholder="form_msg"></textarea>
+                        <form class="kontakt-form" id="kontakt-form" method="POST" action="/api/kontakt">
+                            <input type="text" name="name" placeholder="Vaše jméno" class="form-input" id="form-name" maxlength="120" data-i18n-placeholder="form_name" required />
+                            <input type="email" name="email" placeholder="E-mailová adresa" class="form-input" id="form-email" maxlength="200" data-i18n-placeholder="form_email" required />
+                            <input type="text" name="organization" placeholder="Název organizace" class="form-input" id="form-org" maxlength="200" data-i18n-placeholder="form_org" />
+                            <textarea name="message" placeholder="Jak vám můžeme pomoci?" class="form-textarea" id="form-msg" rows="4" maxlength="5000" data-i18n-placeholder="form_msg" required></textarea>
+                            <input type="text" name="website" tabindex="-1" autocomplete="off" style="display:none" aria-hidden="true" />
                             <button type="submit" class="btn-primary btn-full" id="form-submit" data-i18n="form_submit">Odeslat poptávku</button>
                             <div class="form-status" id="form-status" role="status" aria-live="polite"></div>
                         </form>
