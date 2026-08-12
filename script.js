@@ -314,20 +314,48 @@ document.querySelectorAll('.ref-filter-btn').forEach(btn => {
 // ===== FORM SUBMIT =====
 const form = document.querySelector('.kontakt-form');
 if (form) {
+    const btn      = document.getElementById('form-submit');
+    const statusEl = document.getElementById('form-status');
+
+    // Stavové hlášky drží klíč, aby je přepnutí jazyka přeložilo místo smazání.
+    // Do textu tlačítka se nepíšou — applyLang() přepisuje všechny [data-i18n] prvky.
+    function setStatus(key, fallback, state) {
+        if (!statusEl) return;
+        statusEl.dataset.i18n = key;
+        statusEl.textContent = (window.SPF_I18N && window.SPF_I18N[currentLang] &&
+                                window.SPF_I18N[currentLang][key]) || fallback;
+        statusEl.classList.toggle('is-success', state === 'success');
+        statusEl.classList.toggle('is-error', state === 'error');
+    }
+
     form.addEventListener('submit', function (e) {
         e.preventDefault();
-        const btn = document.getElementById('form-submit');
-        const t = window.SPF_I18N && window.SPF_I18N[currentLang];
-        const msg = (t && t.form_success) || '✓ Odesláno! Ozveme se vám brzy.';
         if (btn) {
-            btn.textContent = msg;
-            btn.style.background = '#059669';
             btn.disabled = true;
             btn.setAttribute('aria-disabled', 'true');
         }
+        setStatus('form_sending', 'Odesílám…', 'pending');
 
-        const statusEl = document.getElementById('form-status');
-        if (statusEl) statusEl.textContent = msg;
+        fetch(form.action, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+            body: JSON.stringify(Object.fromEntries(new FormData(form)))
+        })
+            .then(res => res.json().catch(() => ({})).then(data => ({ ok: res.ok, data })))
+            .then(({ ok, data }) => {
+                if (!ok || data.success !== true) throw new Error(data.error || 'send failed');
+                setStatus('form_success', '✓ Odesláno! Ozveme se vám brzy.', 'success');
+                form.reset();
+            })
+            .catch(() => {
+                setStatus('form_error',
+                    'Odeslání se nezdařilo. Zkuste to prosím znovu, nebo nám napište na info@spfgroup.org.',
+                    'error');
+                if (btn) {
+                    btn.disabled = false;
+                    btn.removeAttribute('aria-disabled');
+                }
+            });
     });
 }
 

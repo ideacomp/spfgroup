@@ -65,6 +65,14 @@ a {
   color: var(--gray-700);
 }
 
+.form-status.is-success {
+  color: #059669;
+}
+
+.form-status.is-error {
+  color: #dc2626;
+}
+
 :focus-visible {
   outline: 2px solid var(--blue-bright);
   outline-offset: 3px;

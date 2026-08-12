@@ -212,6 +212,8 @@ window.SPF_I18N = {
     form_org: 'Název organizace', form_msg: 'Jak vám můžeme pomoci?',
     form_submit: 'Odeslat poptávku',
     form_success: '✓ Odesláno! Ozveme se vám brzy.',
+    form_sending: 'Odesílám…',
+    form_error: 'Odeslání se nezdařilo. Zkuste to prosím znovu, nebo nám napište na info@spfgroup.org.',
 
     footer_tagline: 'Plánujeme budoucnost, která dává smysl.',
     footer_contact_head: 'Kontakt', footer_reg_head: 'Registrace',
@@ -587,6 +589,8 @@ window.SPF_I18N = {
     form_org: 'Organisation name', form_msg: 'How can we help you?',
     form_submit: 'Submit Inquiry',
     form_success: '✓ Sent! We\'ll get back to you soon.',
+    form_sending: 'Sending…',
+    form_error: 'Sending failed. Please try again, or email us at info@spfgroup.org.',
 
     footer_tagline: 'We plan a future that makes sense.',
     footer_contact_head: 'Contact', footer_reg_head: 'Registration',
@@ -962,6 +966,8 @@ window.SPF_I18N = {
     form_org: 'Organisationsname', form_msg: 'Wie können wir Ihnen helfen?',
     form_submit: 'Anfrage senden',
     form_success: '✓ Gesendet! Wir melden uns bald bei Ihnen.',
+    form_sending: 'Wird gesendet…',
+    form_error: 'Senden fehlgeschlagen. Bitte versuchen Sie es erneut oder schreiben Sie uns an info@spfgroup.org.',
 
     footer_tagline: 'Wir planen eine Zukunft, die Sinn ergibt.',
     footer_contact_head: 'Kontakt', footer_reg_head: 'Registrierung',
