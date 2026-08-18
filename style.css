@@ -1714,11 +1714,21 @@ a {
 
   .hero-content {
     max-width: 100%;
+    /* prostor pro "Posunout dolů", aby se nepřekrývalo s CTA poznámkou */
+    padding-bottom: 150px;
   }
 
   .hero-tags {
     max-height: none;
     overflow: visible;
+  }
+
+  .hero-scroll-hint {
+    bottom: 24px;
+  }
+
+  .hero-scroll-hint .scroll-line {
+    height: 28px;
   }
 
   .hero-tags::after {
