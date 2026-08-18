@@ -23,7 +23,7 @@
   --radius-md: 12px;
   --radius-lg: 20px;
   --radius-xl: 28px;
-  --transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition: 0.16s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* ===== RESET & BASE ===== */
@@ -279,7 +279,7 @@ a {
   height: 110px;
   width: auto;
   margin-bottom: 32px;
-  animation: fadeInUp 0.6s ease both;
+  animation: fadeInUp 0.35s ease-out both;
   filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.5));
 }
 
@@ -296,7 +296,7 @@ a {
   padding: 6px 16px;
   border-radius: 100px;
   margin-bottom: 28px;
-  animation: fadeInUp 0.6s ease both;
+  animation: fadeInUp 0.35s ease-out 0.04s both;
 }
 
 .hero-badge::before {
@@ -329,7 +329,7 @@ a {
   color: var(--white);
   letter-spacing: -0.03em;
   margin-bottom: 20px;
-  animation: fadeInUp 0.7s ease 0.1s both;
+  animation: fadeInUp 0.4s ease-out 0.08s both;
 }
 
 .hero-title .accent {
@@ -341,7 +341,7 @@ a {
   color: rgba(255, 255, 255, 0.8);
   margin-bottom: 28px;
   font-weight: 400;
-  animation: fadeInUp 0.7s ease 0.2s both;
+  animation: fadeInUp 0.4s ease-out 0.14s both;
 }
 
 .hero-tags {
@@ -349,7 +349,7 @@ a {
   flex-wrap: wrap;
   gap: 8px;
   margin-bottom: 40px;
-  animation: fadeInUp 0.7s ease 0.3s both;
+  animation: fadeInUp 0.4s ease-out 0.2s both;
   position: relative;
 }
 
@@ -367,7 +367,7 @@ a {
   flex-direction: column;
   align-items: flex-start;
   gap: 10px;
-  animation: fadeInUp 0.7s ease 0.4s both;
+  animation: fadeInUp 0.4s ease-out 0.26s both;
 }
 
 .hero-cta-note {
@@ -389,7 +389,7 @@ a {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   z-index: 2;
-  animation: fadeIn 1.5s ease 1s both;
+  animation: fadeIn 0.5s ease 0.45s both;
 }
 
 .scroll-line {
@@ -590,7 +590,7 @@ a {
   font-size: 15px;
   font-weight: 600;
   color: var(--navy);
-  transition: transform 0.3s ease;
+  transition: transform 0.18s ease;
 }
 
 .onas-card:hover {
@@ -857,7 +857,7 @@ a {
   object-fit: cover;
   object-position: top center;
   filter: grayscale(100%);
-  transition: filter 0.4s ease;
+  transition: filter 0.25s ease;
 }
 
 .team-card:hover .team-photo {
@@ -1187,7 +1187,7 @@ a {
 .blog-track {
   display: flex;
   gap: 24px;
-  transition: transform 0.42s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   will-change: transform;
 }
 .blog-nav-btn {
@@ -1597,8 +1597,8 @@ a {
 
 .reveal {
   opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.7s ease, transform 0.7s ease;
+  transform: translateY(16px);
+  transition: opacity 0.35s ease-out, transform 0.35s ease-out;
 }
 
 .reveal.visible {

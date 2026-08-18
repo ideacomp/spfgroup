@@ -99,12 +99,18 @@ function updateActiveNav() {
 const reveals = document.querySelectorAll('.team-card, .service-card, .blog-card, .onas-card, .stat, .kontakt-item');
 reveals.forEach(el => el.classList.add('reveal'));
 
+// Odstup mezi kartami je krátký a zastropovaný — u dlouhých mřížek by se jinak
+// poslední karta objevila až o víc než sekundu později.
+const STAGGER_MS   = 35;
+const STAGGER_MAX  = 4;
+
 const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry, i) => {
+    entries.forEach((entry) => {
         if (entry.isIntersecting) {
+            const pos = Array.from(entry.target.parentElement.children).indexOf(entry.target);
             setTimeout(() => {
                 entry.target.classList.add('visible');
-            }, 60 * (Array.from(entry.target.parentElement.children).indexOf(entry.target)));
+            }, STAGGER_MS * Math.min(pos, STAGGER_MAX));
             observer.unobserve(entry.target);
         }
     });
@@ -113,14 +119,43 @@ const observer = new IntersectionObserver((entries) => {
 reveals.forEach(el => observer.observe(el));
 
 // ===== SMOOTH SCROLL OFFSET =====
+// Nativní `behavior: 'smooth'` škáluje trvání se vzdáleností — skok z hero na kontakt
+// pak trvá přes sekundu. Vlastní animace má pevné trvání bez ohledu na délku skoku.
+const SCROLL_MS = 480;
+
+function scrollToY(top) {
+    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (reduce) {
+        window.scrollTo({ top, behavior: 'auto' });
+        return;
+    }
+
+    const start = window.scrollY;
+    const dist  = top - start;
+    if (Math.abs(dist) < 2) return;
+
+    const t0 = performance.now();
+    function step(now) {
+        const p = Math.min((now - t0) / SCROLL_MS, 1);
+        const eased = p < 0.5 ? 4 * p * p * p : 1 - Math.pow(-2 * p + 2, 3) / 2;
+        // behavior 'auto' přebíjí `html { scroll-behavior: smooth }`, jinak by prohlížeč
+        // každý krok animace ještě jednou vyhlazoval a skok by se rozpadl.
+        window.scrollTo({ top: start + dist * eased, behavior: 'auto' });
+        if (p < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+}
+
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
-        const target = document.querySelector(this.getAttribute('href'));
+        const href = this.getAttribute('href');
+        if (href === '#') return;   // modal triggery v sekce-01.html — querySelector('#') by vyhodil SyntaxError
+        const target = document.querySelector(href);
         if (target) {
             e.preventDefault();
             const offset = 80;
             const top = target.getBoundingClientRect().top + window.scrollY - offset;
-            window.scrollTo({ top, behavior: 'smooth' });
+            scrollToY(top);
         }
     });
 });
