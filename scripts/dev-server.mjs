@@ -48,8 +48,15 @@ function readBody(req) {
 const server = createServer(async (req, res) => {
     const url = new URL(req.url, `http://localhost:${PORT}`);
 
-    if (url.pathname === '/api/kontakt') {
-        const { default: handler } = await import('../api/kontakt.js');
+    if (url.pathname.startsWith('/api/')) {
+        const name = url.pathname.slice(5);
+        let handler;
+        try {
+            ({ default: handler } = await import(`../api/${name}.js`));
+        } catch {
+            res.statusCode = 404;
+            return res.end('Not found');
+        }
         const raw = await readBody(req);
         req.body = (req.headers['content-type'] || '').includes('application/json')
             ? (() => { try { return JSON.parse(raw); } catch { return raw; } })()

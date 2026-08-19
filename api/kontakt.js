@@ -1,4 +1,6 @@
 import { Resend } from 'resend';
+import { verifyToken } from '../lib/token.js';
+import { spamReasons, originAllowed, rateLimited } from '../lib/spam.js';
 
 // Příjemce a odesílatel jsou konfigurovatelné přes env, ať se dají přepnout
 // bez zásahu do kódu (např. při testování na jinou schránku).
@@ -127,10 +129,36 @@ export default async function handler(req, res) {
         return res.status(400).json({ success: false, error: 'invalid_body' });
     }
 
-    // Honeypot: pole je v DOM skryté, vyplní ho jen bot. Tváříme se úspěšně,
-    // ať se odesílatel spamu nedozví, že byl odhalen — ale nic neodesíláme.
+    const ip = (req.headers['x-forwarded-for'] || '').split(',')[0].trim();
+
+    // 1. vrstva — původ požadavku. Bot střílející rovnou na endpoint
+    // nemá Origin ani Referer naší domény.
+    if (!originAllowed(req)) {
+        console.warn('[kontakt] zamítnuto: cizí původ', {
+            ip, origin: req.headers.origin, referer: req.headers.referer
+        });
+        return res.status(403).json({ success: false, error: 'forbidden_origin' });
+    }
+
+    // 2. vrstva — honeypot. Pole je v DOM skryté, vyplní ho jen bot.
+    // Tváříme se úspěšně, ať se nedozví, že byl odhalen.
     if (typeof body.website === 'string' && body.website.trim() !== '') {
+        console.warn('[kontakt] zamítnuto: honeypot', { ip });
         return res.status(200).json({ success: true });
+    }
+
+    // 3. vrstva — podepsaný token dokazuje, že klient načetl stránku
+    // a spustil JS. Chybu vracíme poctivě, aby si ji prohlížeč mohl
+    // opravit vyzvednutím nového tokenu a opakováním.
+    const tokenError = verifyToken(body.token);
+    if (tokenError) {
+        console.warn('[kontakt] zamítnuto: token', { ip, duvod: tokenError });
+        return res.status(400).json({ success: false, error: 'bad_token' });
+    }
+
+    if (rateLimited(ip)) {
+        console.warn('[kontakt] zamítnuto: limit odeslání', { ip });
+        return res.status(429).json({ success: false, error: 'rate_limited' });
     }
 
     const name         = String(body.name         || '').trim();
@@ -148,6 +176,13 @@ export default async function handler(req, res) {
         .find(([field, max]) => String(body[field] || '').length > max);
     if (tooLong) {
         return res.status(400).json({ success: false, error: 'too_long', field: tooLong[0] });
+    }
+
+    // 4. vrstva — obsahové heuristiky. Tiše zahazujeme, ať se bot nepoučí.
+    const reasons = spamReasons({ name, organization, message });
+    if (reasons.length) {
+        console.warn('[kontakt] zamítnuto: obsah', { ip, duvody: reasons, name, email });
+        return res.status(200).json({ success: true });
     }
 
     if (!process.env.RESEND_API_KEY) {

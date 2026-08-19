@@ -363,6 +363,31 @@ if (form) {
         statusEl.classList.toggle('is-error', state === 'error');
     }
 
+    // Token se vyzvedne hned při načtení stránky. Server pak pozná, že
+    // odeslání přišlo ze skutečně navštívené stránky, a ne přímým POSTem
+    // na endpoint — tak sem chodil spam.
+    let tokenPromise = null;
+    function getToken(force) {
+        if (force || !tokenPromise) {
+            tokenPromise = fetch('/api/token', { headers: { Accept: 'application/json' } })
+                .then(r => r.json())
+                .then(d => d.token)
+                .catch(() => null);
+        }
+        return tokenPromise;
+    }
+    getToken();
+
+    function send(token) {
+        const payload = Object.fromEntries(new FormData(form));
+        payload.token = token || '';
+        return fetch(form.action, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+            body: JSON.stringify(payload)
+        }).then(res => res.json().catch(() => ({})).then(data => ({ ok: res.ok, data })));
+    }
+
     form.addEventListener('submit', function (e) {
         e.preventDefault();
         if (btn) {
@@ -371,12 +396,13 @@ if (form) {
         }
         setStatus('form_sending', 'Odesílám…', 'pending');
 
-        fetch(form.action, {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
-            body: JSON.stringify(Object.fromEntries(new FormData(form)))
-        })
-            .then(res => res.json().catch(() => ({})).then(data => ({ ok: res.ok, data })))
+        getToken()
+            .then(send)
+            // Token mohl vypršet, když stránka zůstala dlouho otevřená.
+            // Jednou si vyžádáme nový a zkusíme to znovu.
+            .then(r => (r.data && r.data.error === 'bad_token')
+                ? getToken(true).then(send)
+                : r)
             .then(({ ok, data }) => {
                 if (!ok || data.success !== true) throw new Error(data.error || 'send failed');
                 setStatus('form_success', '✓ Odesláno! Ozveme se vám brzy.', 'success');
