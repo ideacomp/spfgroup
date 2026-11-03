@@ -856,12 +856,6 @@ a {
   height: 100%;
   object-fit: cover;
   object-position: top center;
-  filter: grayscale(100%);
-  transition: filter 0.25s ease;
-}
-
-.team-card:hover .team-photo {
-  filter: grayscale(0%);
 }
 
 .team-info {
@@ -2244,12 +2238,6 @@ a {
   object-fit: cover;
   object-position: top center;
   display: block;
-  filter: grayscale(10%);
-  transition: filter var(--transition);
-}
-
-.tym-card:hover .tym-photo {
-  filter: grayscale(0%);
 }
 
 /* Initials fallback (no photo) */
